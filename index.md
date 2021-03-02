@@ -13,7 +13,7 @@ profile_picture:
   Read my (Dutch) stuff on
  <a href="http://tussendelinies.nl/profile/robin">Tussendelinies.nl</a>
   </p>
-  test
+
 <p>
   You can find the source code and some instructions on <a href="https://github.com/robinkoetsier">GitHub</a>.
 </p>
