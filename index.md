@@ -10,7 +10,8 @@ profile_picture:
 </p>
 
 <p>
- <a href="http://tussendelinies.nl/profile/robinm">tussendelinies.nl/profile/robin</a>
+  Read my (Dutch) stuff on
+ <a href="http://tussendelinies.nl/profile/robin">Tussendelinies.nl</a>
   </p>.
 <p>
   You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
