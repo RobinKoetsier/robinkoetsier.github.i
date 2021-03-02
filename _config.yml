@@ -22,23 +22,18 @@ footer:
     - name: Email
       value: yourmail@domain.com
       link: mailto:yourmail@domain.com
-    - name: WeChat
-      value: YourWeChatUsername
-      link: "#"
+
   follow:
     - name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - name: Facebook
-      link: http://facebook.com/YourFacebookUsername
+      link: http://twitter.com/RobinWilhelmus
+      username: "@RobinWilhelmus"
     - name: LinkedIn
       link: http://linkedin.com/in/YourLinkedInUsername
     - name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - name: RSS
-      link: /feed.xml
+      link: http://github.com/RobinKoetsier
+    - name: Tussen de Linies
+      link: https://tussendelinies.nl/profile/robin
+  
 
 # Build settings
 markdown: kramdown
