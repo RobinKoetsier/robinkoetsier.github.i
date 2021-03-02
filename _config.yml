@@ -32,10 +32,6 @@ footer:
     - name: GitHub
       link: http://github.com/RobinKoetsier
       
-   posts:
-    - name: Tussen de Linies
-      link: https://tussendelinies.nl/profile/robin
-  
 
 # Build settings
 markdown: kramdown
