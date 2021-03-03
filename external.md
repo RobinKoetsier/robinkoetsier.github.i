@@ -5,6 +5,7 @@ title: External
 ---
 
 Shiny apps:
-Eredivisie app
-Age plot app
+<a href="http://tussendelinies.nl/data-dashboard">Eredivisie Data Dashboard</a>
+
+<a href="http://shinynew.robinkoetsier.nl/AppTwo">Age plot app</a>
 <br />
