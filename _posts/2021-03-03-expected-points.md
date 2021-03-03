@@ -27,7 +27,7 @@ You probably read already about it, or saw it in some tweet/picture/anything, Ex
     * [Part 2 Sub-part 2](#part-2-sub-part-2)
 3. [Footnotes](#footnotes)
 
-#### xPoints?
+#### XPOINTS?
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 <br />
 
