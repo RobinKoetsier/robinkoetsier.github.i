@@ -15,7 +15,7 @@ This post is about Expected Points
 
 Read the Dutch version of this article [here](https://www.tussendelinies.nl/expected-points/)
 
-You probably read already about it, or saw it in some tweet/picture/anything, Expected Points. From understat to Opta, they are all using it. There are some different ways to calculate it though. In this article I will tell you my method, the emthod we use at [Tussen de Linies](https://www.tussendelinies.nl)
+You probably read already about it, or saw it in some tweet/picture/anything, Expected Points. From understat to Opta, they are all using it. There are some different ways to calculate it though. In this article I will tell you my method, the method we use for our dashboard at [Tussen de Linies](https://www.tussendelinies.nl/data-dashboard)
 
 <br />
 
