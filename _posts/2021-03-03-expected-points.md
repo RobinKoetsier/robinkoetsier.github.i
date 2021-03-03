@@ -23,7 +23,7 @@ You probably read already about it, or saw it in some tweet/picture/anything, Ex
 #### Table of Contents
 1. [xPoints?](#xpoints)
 2. [An example](#an-example)
-    * [Part 2 Sub-part 1](#part-2-sub-part-1)
+    * [How big are the chances?(#how-big-are-the-chances)
     * [Part 2 Sub-part 2](#part-2-sub-part-2)
 3. [Footnotes](#footnotes)
 
@@ -37,13 +37,15 @@ Let's take a look at the game FC Groningen against FC Twente. The game ended in 
 
 <div style="text-align:center"><img src="/assets/img/first_post/xG.png" /></div>
 
-As you can see, the xG of Groningen is 0.5 higher (almost 36%), but the chance to win is 86% percent higher. 
+As you can see, the xG of Groningen is 0.5 higher (almost 36%), but the chance to win is 86% percent higher. The size of the chances is what decides the difference.
 
 <br />
 
-##### PART 2 SUB PART 1
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+##### HOW BIG ARE THE CHANCES?
 
+<div style="text-align:center"><img src="/assets/img/first_post/shotmap.jpg" /></div>
+
+Besides the two goals, Groningen has a lot of medium sized chances. Twente has three good chances, but not much else. 
 <br />
 
 ##### PART 2 SUB PART 2
