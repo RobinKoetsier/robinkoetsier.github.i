@@ -37,9 +37,6 @@ Let's take a look at the game FC Groningen against FC Twente. The game ended in 
 
 <div style="text-align:center"><img src="/assets/img/first_post/xG.png" /></div>
 
-<img style="float: middle;" src="/assets/img/first_post/xG.png">
-
-![](/assets/img/first_post/xG.png)
 <br />
 
 ##### PART 2 SUB PART 1
