@@ -1,8 +1,10 @@
 ---
 layout: blog
-title: Blog
-slug: /blog
+title: External
+
 ---
 
-This is an example of a "Blog" page, displaying a list of posts.
+Shiny apps:
+Eredivisie app
+Age plot app
 <br />
