@@ -7,7 +7,7 @@ og_image: /assets/img/content/first_post/stand.JPG
 ---
 ![](/assets/img/content/first_post/stand.JPG)
 ja
-![](/assets/img/content/first_post/header.png)
+![](/assets/img/first_post/stand.JPG)
 <img src="{{ "/assets/img/content/first_post/stand.JPG" | absolute_url }}" alt="bay" class="post-pic"/>
 <br />
 <br />
