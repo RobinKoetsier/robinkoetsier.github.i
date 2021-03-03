@@ -1,7 +1,7 @@
 ---
 layout: home
 profile_picture:
-  src: /assets/img/flood.jpg
+  src: /assets/img/flood.png
   alt: website picture
 ---
 
