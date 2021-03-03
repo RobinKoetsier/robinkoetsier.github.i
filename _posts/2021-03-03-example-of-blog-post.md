@@ -5,7 +5,7 @@ date:   2021-03-03 10:00:40
 blurb: "First post to test the blog"
 og_image: /assets/img/content/first_post/stand.JPG
 ---
-[GitHub Logo](/assets/img/content/first_post/stand.JPG)
+![GitHub Logo](/assets/img/content/first_post/stand.JPG)
 <img src="{{ "/assets/img/content/first_post/stand.JPG" | absolute_url }}" alt="bay" class="post-pic"/>
 <br />
 <br />
