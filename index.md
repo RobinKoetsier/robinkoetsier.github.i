@@ -6,7 +6,9 @@ profile_picture:
 ---
 
 <p>
-Welcome! This site serves as an personal site for my data and blog posts. 
+###Welcome! 
+  
+This site serves as an personal site for my data and blog posts. 
   
   
 I will mostly write about Dutch football.
