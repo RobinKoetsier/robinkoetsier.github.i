@@ -25,7 +25,7 @@ You probably read already about it, or saw it in some tweet/picture/anything, Ex
 2. [An example](#an-example)
     * [How big are the chances?](#how-big-are-the-chances)
 3. [The calculation](#the-calculation)
-4. [Footnotes](#footnotes)
+4. [The problem(s)](#the-problems)
 
 #### XPOINTS?
 What can we do with xPoints and do we need it?  
@@ -52,11 +52,13 @@ Besides the two goals, Groningen has a lot of medium sized chances. Twente has t
 
 For every shot we draw a random number between 0 and 1. Everytime this number is smaller than the xG of that shot, the shot becomes a goal. After we've done this for every shot in the match, we got a number of home- and away goals and so a result (home win/draw/away win). We simulate a match this way for ten thousand times. Each result is stored and after all the simulations we count the number of different results to determine the chance for both teams to win. It's simple the perentage of simulations resulting in that specific result. 
 
-After we have those chances, we multiply the chance to win with 3 and the chance for a draw with 1 for both teams. Those calculations will give us a number of points that we call Expected Points. Doing this for a whole season will give us an Expected Rank.
+After we have those chances, we multiply the chance to win with 3 and the chance for a draw with 1 for both teams. So: Groningen 49.04% * 3 punten + 24.72% * 1 punt = 1.72 
+
+Those calculations will give us a number of points that we call Expected Points. Doing this for a whole season will give us an Expected Rank. In this match, Groningen didn't got enough with there 1 real point, but over the whole season they got too many points.
 
 <br />
 
 
-##### FOOTNOTES
+##### THE PROBLEM(S)
 
 [^1]: This is a note!
