@@ -33,7 +33,10 @@ We can use xPoints to see where we may expect a team in the league table. In sho
 <br />
 
 Let's look at an example in De Eredivisie 
-
+| Syntax       | FC Groningen| FC Twente |
+| -------------| ----------- |-----------|
+| Chance to win| Title       |           |
+| Paragraph    | Text        |           |
 <br />
 <br />
 
