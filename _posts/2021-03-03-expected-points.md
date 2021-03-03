@@ -37,6 +37,8 @@ Let's take a look at the game FC Groningen against FC Twente. The game ended in 
 
 <div style="text-align:center"><img src="/assets/img/first_post/xG.png" /></div>
 
+As you can see, the xG of Groningen is 0.5 higher (almost 36%), but the chance to win is 86% percent higher. 
+
 <br />
 
 ##### PART 2 SUB PART 1
