@@ -21,8 +21,8 @@ footer:
   show_powered_by: true
   contact:
     - name: Email
-      value: yourmail@domain.com
-      link: mailto:yourmail@domain.com
+      value: e-mail me!
+      link: mailto:robinkoetsier@gmail.com
 
   follow:
     - name: Twitter
