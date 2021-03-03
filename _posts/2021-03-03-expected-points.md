@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "First post"
+title:  "Expected Points"
 date:   2021-03-03 10:00:40
 blurb: "First post to test the blog"
 og_image: /assets/img/content/first_post/stand.JPG
@@ -61,7 +61,6 @@ Those calculations will give us a number of points that we call Expected Points.
 
 ##### THE PROBLEM(S)
 
-Game state is very much resposible for the way a team acts. If you're leading by an early goal, the urge to attack fades away. The opponent will attack instead and get a higher xG with every shot they take. If they don't score, they keep attacking without scoring. So you're xG skews in their favour, even if their chances are poor. Scoring 2 or 3 goals from less than 1 xG will also have this result. 
-
+Game state is very much resposible for the way a team acts. If you're leading by an early goal, the urge to attack fades away. The opponent will attack instead and will get a higher xG with every shot they take. If they don't score, they keep attacking without scoring. So the xG skews in their favour, even if their chances are poor. Scoring 2 or 3 goals from less than 1 xG in the beginning of the game will also have this result, as the opponent must attack and have a comfortable lead.
 
 The experience learns us that over a whole season, xPoints is good in giving us a fair picture about the teams in a competition.
