@@ -6,7 +6,7 @@ profile_picture:
 ---
 
 <p>
-###Welcome! 
+Welcome! 
   
 This site serves as an personal site for my data and blog posts. 
   
