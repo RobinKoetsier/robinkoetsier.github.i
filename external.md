@@ -1,6 +1,6 @@
 ---
 layout: external
-title: External test
+title: External
 
 ---
 
