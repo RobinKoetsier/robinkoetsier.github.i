@@ -24,8 +24,8 @@ You probably read already about it, or saw it in some tweet/picture/anything, Ex
 1. [xPoints?](#xpoints)
 2. [An example](#an-example)
     * [How big are the chances?](#how-big-are-the-chances)
-    * [The calculation](#the-calculation)
-3. [Footnotes](#footnotes)
+3. [The calculation](#the-calculation)
+4. [Footnotes](#footnotes)
 
 #### XPOINTS?
 What can we do with xPoints and do we need it?  
@@ -48,7 +48,7 @@ As you can see, the xG of Groningen is 0.5 higher (almost 36%), but the chance t
 Besides the two goals, Groningen has a lot of medium sized chances. Twente has three good chances, but not much else. For getting the chance to win and so the expected points, we will simulate those chances.
 <br />
 
-##### THE CALCULATION
+#### THE CALCULATION
 
 For every shot we draw a random number between 0 and 1. Everytime this number is smaller than the xG of that shot, the shot becomes a goal. After we've done this for every shot in the match, we got a number of home- and away goals and so a result (home win/draw/away win). We simulate a match this way for ten thousand times. Each result is stored and after all the simulations we count the number of different results to determine the chance for both teams to win. It's simple the perentage of simulations resulting in that specific result. 
 
