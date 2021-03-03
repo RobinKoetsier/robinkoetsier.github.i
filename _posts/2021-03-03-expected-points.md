@@ -34,6 +34,7 @@ Raw xG numbers don't say everything, as the quality of the chances plays a role 
 
 #### AN EXAMPLE
 Let's take a look at the game FC Groningen against FC Twente. The game ended in 2-2 with xG 1.9 and 1.5. In the table you'll see the chances for both teams to win.
+
 ![](/assets/img/first_post/xG.png)
 <br />
 
