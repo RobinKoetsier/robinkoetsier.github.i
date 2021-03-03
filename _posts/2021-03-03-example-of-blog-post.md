@@ -5,15 +5,15 @@ date:   2021-03-03 10:00:40
 blurb: "First post to test the blog"
 og_image: /assets/img/content/first_post/stand.JPG
 ---
-![](/assets/img/content/first_post/stand.JPG)
-ja
+
+
 ![](/assets/img/first_post/stand.JPG)
-<img src="{{ "/assets/img/content/first_post/stand.JPG" | absolute_url }}" alt="bay" class="post-pic"/>
+
 <br />
 <br />
 
-This is an example of blog post.
-Picture by [me](https://unsplash.com/@bkotynski).
+This post is about Expected Points
+Picture by [me](https://tussendelinies.nl/data-dashboard).
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum[^1].
 
