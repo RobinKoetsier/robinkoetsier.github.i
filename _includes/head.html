@@ -6,7 +6,7 @@
   {% assign page_is_article = false %}
   {% if page.layout == "post" %}{% assign page_is_article = true %}{% endif %}
 
-  {% assign page_title = "" %}
+  {% assign page_title = "A" %}
   {% if page.draft %}{% assign page_title = page_title | append: "[DRAFT] " %}{% endif %}
   {% if page.title %}
     {% assign page_title = page_title | append: site.title | append: " | " | append: page.title %}
