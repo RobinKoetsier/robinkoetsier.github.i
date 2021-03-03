@@ -6,7 +6,7 @@ blurb: "First post to test the blog"
 og_image: /assets/img/content/post-example/Banner.jpg
 ---
 
-<img src="{{ "/assets/img/content/post-example/Banner.jpg" | absolute_url }}" alt="bay" class="post-pic"/>
+<img src="{{ "/assets/img/content/first_post/stand.jpg" | absolute_url }}" alt="bay" class="post-pic"/>
 <br />
 <br />
 
