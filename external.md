@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: external
 title: External
 
 ---
