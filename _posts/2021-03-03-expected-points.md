@@ -30,16 +30,6 @@ You probably read already about it, or saw it in some tweet/picture/anything, Ex
 #### XPOINTS?
 What can we do with xPoints and do we need it?  
 We can use xPoints to see where we may expect a team in the league table. In short: it is a way to show how well they perform this season, looking at their shots. 
-<br />
-
-Let's look at an example in De Eredivisie 
-| Syntax       | FC Groningen| FC Twente |
-| -------------| ----------- |-----------|
-| xG           | 1.96       |           |
-| Chance to win| Text        |           |
-| Draw         | Text        |           |
-<br />
-<br />
 
 #### PART 2
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
