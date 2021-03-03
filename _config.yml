@@ -7,7 +7,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of the site
 url: "https://robinkoetsier.github.io" # the base hostname & protocol for the site
 og_image: /assets/img/profile-pic.jpg
-#google_analytics: "UA-121636368-3"
+google_analytics: "G-EY7MK5N8QQ"
 
 header:
   pages:
