@@ -32,7 +32,7 @@ What can we do with xPoints and do we need it?
 We can use xPoints to see where we may expect a team in the league table. In short: it is a way to show how well they perform this season, looking at their shots. 
 <br />
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Let's look at an example in De Eredivisie 
 
 <br />
 <br />
