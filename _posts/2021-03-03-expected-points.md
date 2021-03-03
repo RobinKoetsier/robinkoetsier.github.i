@@ -21,7 +21,7 @@ You probably read already about it, or saw it in some tweet/picture/anything, Ex
 
 
 #### Table of Contents
-1. [xPoints?](#xpoints?)
+1. [xPoints?](#xpoints)
 2. [Part 2](#part-2)
     * [Part 2 Sub-part 1](#part-2-sub-part-1)
     * [Part 2 Sub-part 2](#part-2-sub-part-2)
