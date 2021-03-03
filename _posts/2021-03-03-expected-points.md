@@ -23,8 +23,8 @@ You probably read already about it, or saw it in some tweet/picture/anything, Ex
 #### Table of Contents
 1. [xPoints?](#xpoints)
 2. [An example](#an-example)
-    * [How big are the chances?(#how-big-are-the-chances)
-    * [The calculation(#the-calculation)
+    * [How big are the chances?](#how-big-are-the-chances)
+    * [The calculation](#the-calculation)
 3. [Footnotes](#footnotes)
 
 #### XPOINTS?
