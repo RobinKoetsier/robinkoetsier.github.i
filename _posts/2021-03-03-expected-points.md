@@ -22,18 +22,19 @@ You probably read already about it, or saw it in some tweet/picture/anything, Ex
 
 #### Table of Contents
 1. [xPoints?](#xpoints)
-2. [Part 2](#part-2)
+2. [An example](#an-example)
     * [Part 2 Sub-part 1](#part-2-sub-part-1)
     * [Part 2 Sub-part 2](#part-2-sub-part-2)
 3. [Footnotes](#footnotes)
 
 #### XPOINTS?
 What can we do with xPoints and do we need it?  
-We can use xPoints to see where we may expect a team in the league table. In short: it is a way to show how well they perform this season, looking at their shots. 
+We can use xPoints to see where we may expect a team in the league table. In short: it is a way to show how well they perform this season, looking at their shots.  
+Raw xG numbers don't say everything, as the quality of the chances plays a role as well.
 
-#### PART 2
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
+#### AN EXAMPLE
+Let's take a look at the game FC Groningen against FC Twente. The game ended in 2-2 with xG 1.9 and 1.5. In the table you'll see the chances for both teams to win.
+![](/assets/img/first_post/xG.png)
 <br />
 
 ##### PART 2 SUB PART 1
