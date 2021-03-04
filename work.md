@@ -6,7 +6,7 @@ items:
   - title: R/RStudio
     image:
       src: /assets/img/work/index.png
-      alt: water
+      alt: RStudio
     description: Sufficient in coding in R. Stuff like machine learning, data visualisations with ggplot and other coding tasks.
   - title: My Interest 2
     image:
