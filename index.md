@@ -8,7 +8,7 @@ profile_picture:
 <p>
 Welcome! 
  </p>
-This site serves as an personal site for my data and blog posts. 
+This site serves as an personal site for my data and blog posts. (Very much still work in progress)
   
  <p> 
 I will mostly write about Dutch football.
