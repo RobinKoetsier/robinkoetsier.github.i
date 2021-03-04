@@ -6,7 +6,7 @@ profile_picture:
 ---
 
 <p>
-  windowsFonts(robotoc = windowsFont("Roboto Condensed"))
+
 Welcome! 
  
  </p>
