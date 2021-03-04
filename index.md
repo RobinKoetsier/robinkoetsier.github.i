@@ -4,7 +4,10 @@ profile_picture:
   src: /assets/img/flood.png
   alt: website picture
 ---
-
+body{
+  font-family: Helvetica;
+  font-size: 16pt;
+}
 <p>
 Welcome! 
  </p>
