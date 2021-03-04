@@ -3,7 +3,7 @@ layout: work
 title: Work
 slug: /work
 items:
-  - title: R/RStudio
+  - title: <b>R/RStudio</b>
     image:
       src: /assets/img/work/index.png
       alt: RStudio
