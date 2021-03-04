@@ -10,6 +10,7 @@ body{
 }
 <p>
 Welcome! 
+   <span style="color:red">red</span>
  </p>
 This site serves as an personal site for my data and blog posts. (Very much still work in progress)
   
