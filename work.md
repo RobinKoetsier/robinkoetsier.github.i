@@ -5,7 +5,7 @@ slug: /work
 items:
   - title: My Interest 1
     image:
-      src: /assets/img/work/rlogo.jpg
+      src: /assets/img/work/index.png
       alt: water
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   - title: My Interest 2
