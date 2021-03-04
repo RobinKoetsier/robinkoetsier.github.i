@@ -7,7 +7,8 @@ items:
     image:
       src: /assets/img/work/index.png
       alt: RStudio
-    description: Sufficient in coding in R. Stuff like machine learning, data visualisations with ggplot and other coding tasks.
+    description: Sufficient in coding in R. Things like machine learning, data visualisations with ggplot and building Shiny Apps.
+    For examples see my [Twitter](https://twitter.com/RobinWilhelmus), or my [Shiny apps](https://www.gettingbluefingers.com/external)
   - title: My Interest 2
     image:
       src: /assets/img/work/sand.png
