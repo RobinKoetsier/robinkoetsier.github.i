@@ -7,7 +7,7 @@ items:
     image:
       src: /assets/img/work/index.png
       alt: water
-    description: Love Rstudio and stuff.
+    description: Sufficient in coding in R. Stuff like machine learning, data visualisations with ggplot and other coding tasks.
   - title: My Interest 2
     image:
       src: /assets/img/work/sand.png
@@ -15,6 +15,6 @@ items:
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 ---
 
-This is an example of a "Work" page, displaying your work, your interests, your projects.
+This page shows my interests and skills
 <br />
 <br />
