@@ -5,7 +5,8 @@ title: Visualizations
 ---
 ## Some visualizations I made
 <a href="http://i.stack.imgur.com/TvhYx.jpg">
-<img src="http://i.stack.imgur.com/TvhYx.jpg">
+<img src="http://i.stack.imgur.com/TvhYx.jpg"
+     style="width:150px">
 </a>
 
 ### How involved are players in De Eredivisie?
