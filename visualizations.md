@@ -4,14 +4,11 @@ title: Visualizations
 
 ---
 ## Some visualizations I made
-<a href="http://i.stack.imgur.com/TvhYx.jpg">
-<img src="http://i.stack.imgur.com/TvhYx.jpg"
-     style="width:150px">
+<a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/belangrijk.png">
+<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/belangrijk.png"
+     style="width:200px">
 </a>
-<a href="http://i.stack.imgur.com/TvhYx.jpg">
-<img src="http://i.stack.imgur.com/TvhYx.jpg"
-     style="width:50px">
-</a>
+
 
 ### How involved are players in De Eredivisie?
 
