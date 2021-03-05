@@ -12,9 +12,7 @@ og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.i
 <br />
 <br />
 Giakoumakis stays with VVV for at least the rest of the season. He scored 21 goals (6 penalties) already this season. Is he really that good? Let's find out if a bigger club should go after him this summer. 
-
 <br />
-
 He had 15 non penalty goals. His shot map looks great. Very few shots from outside the penalty box and a lot of central shots. His NPxG is 8.46, which already shows his overperformance.  
 <div style="text-align:center"><img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/second_post/1.jpg" /></div>
 
