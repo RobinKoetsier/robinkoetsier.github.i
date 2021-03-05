@@ -15,6 +15,7 @@ header:
       slug: /
     - name: Work
     - name: Blog
+    - name: Visualizations
     - name: External
 
 footer:
