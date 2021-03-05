@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Extradordinary Giakoumakis"
+title:  "Extraordinary Giakoumakis"
 date:   2021-02-04 10:00:40
 blurb: "How good is Giakoumakis?"
 og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/second_post/0.jpg
