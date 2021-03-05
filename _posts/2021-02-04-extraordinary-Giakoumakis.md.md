@@ -7,7 +7,7 @@ og_image: /assets/img/content/second_post/1.jpg
 ---
 
 
-![](/assets/img/second_post/1.JPG)
+![](https://github.com/RobinKoetsier/robinkoetsier.github.io/assets/img/second_post/1.jpg )
 
 <br />
 <br />
