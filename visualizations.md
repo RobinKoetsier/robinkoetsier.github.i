@@ -14,8 +14,8 @@ title: Visualizations
      style="width:200px">
 </a>
 
-<a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/xG.png">
-<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/xG.png"
+<a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/xg.png">
+<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/xg.png"
      style="width:200px">
 
 
