@@ -6,6 +6,12 @@ title: Visualizations
 ## Some visualizations I made
 
 ### How involved are players in De Eredivisie?
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+</style>
+
 <div style="text-align:center"><img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/belangrijk.png"></div>
 
 <div style="text-align:center"><img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/xGChain.png"></div>
@@ -18,11 +24,7 @@ img {
   width: 150px; /* Set a small width */
 }
 
-/* Add a hover effect (blue shadow) */
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-</style>
+
 <body>
 
 <a target="_blank" href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/xGChain.png">
