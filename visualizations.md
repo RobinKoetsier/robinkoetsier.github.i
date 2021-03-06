@@ -14,6 +14,7 @@ title: Visualizations
      style="width:200px">
 </a>
 
+### How do players in De Eerste Divisie perform looking at xG?  
 <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/xg.png">
 <img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/xg.png"
      style="width:200px">
