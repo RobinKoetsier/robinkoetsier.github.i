@@ -14,7 +14,7 @@ items:
     image:
       src: /assets/img/work/tdllogo.png
       alt: Tussen de Linies
-    description: Wrote some articles in Dutch about Dutch football and Expected Points. [Click here for my articles](https://www.tussendelinies.nl/profile/robin)
+    description: Wrote some articles in Dutch about Dutch football and Expected Points.  <a href="https://www.tussendelinies.nl/profile/robin">Click here for my articles</a>
 ---
 
 Here you can see some examples of my writing and coding.
