@@ -13,10 +13,10 @@ items:
   - title: <b>Python</b>
     image:
       src: /assets/img/work/tdllogo.png
-      alt: Python
-    description: Sufficient in coding in Python. I know the basics and can learn new things quick. 
+      alt: Tussen de Linies
+    description: Wrote some articles in Dutch about Dutch football and Expected Points. [Click here for my articles](https://www.tussendelinies.nl/profile/robin)
 ---
 
-This page shows my skills
+Here you can see some examples of my writing and coding.
 <br />
 <br />
