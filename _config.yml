@@ -16,7 +16,7 @@ header:
     - name: Work
     - name: Blog
     - name: Visualizations
-    - name: External
+  #  - name: External
 
 footer:
   show_powered_by: true
