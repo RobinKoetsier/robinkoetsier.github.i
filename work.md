@@ -12,7 +12,7 @@ items:
 
   - title: <b>Python</b>
     image:
-      src: /assets/img/work/python.png
+      src: /assets/img/work/tdllogo.png
       alt: Python
     description: Sufficient in coding in Python. I know the basics and can learn new things quick. 
 ---
