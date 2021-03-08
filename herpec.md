@@ -1,1 +1,1 @@
-### Data-analyse Hercles - PEC Zwolle
+### Data-analyse Herecles - PEC Zwolle
