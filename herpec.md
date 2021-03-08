@@ -1,1 +1,7 @@
-### Data-analyse Heracles - PEC Zwolle
+---
+layout: external
+title: Shiny Apps
+
+---
+
+### Shiny apps:
