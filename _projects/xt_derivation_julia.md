@@ -1,7 +1,7 @@
 ---
 name: Expected Threat Derivation in Julia
 tools: [Julia, ]
-image: "../images/xt_derivation_julia/cover.gif" 
+image: "https://raw.githubusercontent.com/sharmaabhishekk/sharmaabhishekk.github.io/master/images/xt_derivation_julia/cover.gif" 
 description: Deriving Expected Threat Model using Julia
 ---
 
