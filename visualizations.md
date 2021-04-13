@@ -5,6 +5,8 @@ title: Visualizations
 ---
 ## Some visualizations I made
 
+[See the collection on Twitter](https://twitter.com/RobinWilhelmus/timelines/1381600557165592581)
+
 ### How involved are players in De Eredivisie?
 <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/belangrijk.png">
 <img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/visualizations/belangrijk.png"
