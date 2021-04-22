@@ -4,5 +4,5 @@ title: Tutorials
 slug: /tutorials
 ---
 
-My own tutorials
+My own tutorials.
 <br />
