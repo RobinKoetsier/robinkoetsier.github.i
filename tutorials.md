@@ -5,5 +5,5 @@ slug: /tutorials
 ---
 
 My own tutorials.
-[a relative link](/_tutorials/test.md)
+[a relative link](/tutorials/test.md)
 <br />
