@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: tutorials
 title: Tutorials
 slug: /tutorials
 ---
