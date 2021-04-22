@@ -5,5 +5,5 @@ slug: /tutorials
 ---
 
 My own tutorials.
-(test)[shiny.md]
+(test)[https://www.gettingbluefingers.com/blog]
 <br />
