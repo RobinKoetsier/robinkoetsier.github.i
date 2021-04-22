@@ -5,5 +5,5 @@ slug: /tutorials
 ---
 
 My own tutorials.
-[test](https://www.gettingbluefingers.com/blog)
+[a relative link](/_tutorials/test.md)
 <br />
