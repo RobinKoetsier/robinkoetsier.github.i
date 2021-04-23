@@ -20,5 +20,11 @@ library(tidyverse)       #for ggplot, dplyr and several other stuff
 library(ggtext)          #for text manipulation
 ```
 
+Next we are going to pick a player in which we are interested, as long as it's from the leagues mentioned earlier. I'm choosing Mateusz Klich, but you can pick someone else, I'm not judging you.
+As mentioned before, worldfootballR has a function to scrape the scouting report.
 
-test
+```
+df_klich <- fb_player_scouting_report(https://fbref.com/en/players/282679b4/Mateusz-Klich)
+head(df_klich)
+```
+
