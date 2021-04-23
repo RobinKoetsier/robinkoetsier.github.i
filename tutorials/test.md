@@ -29,7 +29,7 @@ head(df_klich)
 ```
 To colour them by type of the Statistic, we make a new column and fill it with "Attacking", "Possession" or "Defending"
 
-```
+```r
 df <- df %>% mutate(stat=case_when(Statistic == "Non-Penalty Goals"|
                                                Statistic == "npxG"|
                                                Statistic == "Shots Total"|
