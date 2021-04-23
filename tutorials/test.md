@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Percentile Radars"
-date:   2021-22-04 10:00:40
+date:   24-04-2021
 blurb: "Making radars"
 og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/second_post/0.jpg
 ---
@@ -11,10 +11,11 @@ As I really like the radars from football slices (RIP) and the mplsoccer package
 <img width="400" alt="Pizza Plot" src="https://mplsoccer.readthedocs.io/en/latest/_images/sphx_glr_plot_pizza_colorful_001.png">
 </p>
 The Python package makes you enter te values yourself. For some leagues (Men's Big 5 Leagues and European Competition, Major League Soccer, Women's Super League) FBref has so called scouting reports with data from StatsBomb. These scouting reports do not only have the absolute numers for several metrics, but also the percentiles. 
-The worldfootballR package let's you scrape theme really easy. Let's start by setting up out environment.
+The worldfootballR package let's you scrape them really easy. Let's start by setting up out environment. If needed, install the packages first.
 
 ```{r}
 library(worldfootballR)  #for scraping
 library(tidyverse)    #for ggplot, dplyr and several other stuff
 library(ggtext) #for text manipulation
 ```
+
