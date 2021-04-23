@@ -10,3 +10,11 @@ As I really like the radars from football slices (RIP) and the mplsoccer package
 
 <img width="200" alt="Pizza Plot" src="https://mplsoccer.readthedocs.io/en/latest/_images/sphx_glr_plot_pizza_colorful_001.png">
 
+The Python package makes you enter te values yourself. For some leagues (Men's Big 5 Leagues and European Competition, Major League Soccer, Women's Super League) FBref has so called scouting reports with data from StatsBomb. These scouting reports do not only have the absolute numers for several metrics, but also the percentiles. 
+The worldfootballR package let's you scrape theme really easy. Let's start by setting up out environment.
+
+```{r}
+library(worldfootballR)  #for scraping
+library(tidyverse)    #for ggplot, dplyr and several other stuff
+library(ggtext) #for text manipulation
+```
