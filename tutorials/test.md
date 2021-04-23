@@ -23,11 +23,11 @@ library(ggtext)          #for text manipulation
 Next we are going to pick a player in which we are interested, as long as it's from the leagues mentioned earlier. I'm choosing Mateusz Klich, but you can pick someone else, I'm not judging you.
 As mentioned before, worldfootballR has a function to scrape the scouting report.
 
-```r
+```
 df <- fb_player_scouting_report(https://fbref.com/en/players/282679b4/Mateusz-Klich)
 head(df_klich)
 ```
-To colour them by type of the Statistic, we make a new column and fill it with "Attacking", "Possession" or "Defending"
+To colour them by type of the Statistic, we make a new column and fill it with "Attacking", "Possession" or "Defending". 
 
 ```r
 df <- df %>% mutate(stat=case_when(Statistic == "Non-Penalty Goals"|
@@ -46,6 +46,20 @@ df <- df %>% mutate(stat=case_when(Statistic == "Non-Penalty Goals"|
                                                Statistic == "Progressive Passes Rec" ~ "Possession",
                                              TRUE ~ "Defending"))
 ```
+
+Now we can use this column to color the chart. I'm not interested in every metric though. The 'npxG+xA' column for example. I already have those metrics in my chart. To pick the metrics you want/don't want, print the Statistic column and choose.
+
+```r
+print(df$Statistic)
+ [1] "Non-Penalty Goals"      "npxG"                   "Shots Total"            "Assists"               
+ [5] "xA"                     "npxG+xA"                "Shot-Creating Actions"  "Passes Attempted"      
+ [9] "Pass Completion %"      "Progressive Passes"     "Progressive Carries"    "Dribbles Completed"    
+[13] "Touches (Att Pen)"      "Progressive Passes Rec" "Pressures"              "Tackles"               
+[17] "Interceptions"          "Blocks"                 "Clearances"             "Aerials won"        
+```
+
+
+
 
 
 
