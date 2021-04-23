@@ -12,7 +12,7 @@ As I really like the radars from football slices (RIP) and the mplsoccer package
 </p>
 The Python package makes you enter te values yourself. For some leagues (Men's Big 5 Leagues and European Competition, Major League Soccer, Women's Super League) FBref has so called scouting reports with data from StatsBomb. These scouting reports do not only have the absolute numers for several metrics, but also the percentiles. 
 The worldfootballR package let's you scrape them really easy. Let's start by setting up out environment. If needed, install the packages first.
-<font size="1">
+
   
 ```{r}
 library(worldfootballR)  #for scraping
@@ -20,5 +20,5 @@ library(tidyverse)    #for ggplot, dplyr and several other stuff
 library(ggtext) #for text manipulation
 ```
 
-</font> 
+
 test
