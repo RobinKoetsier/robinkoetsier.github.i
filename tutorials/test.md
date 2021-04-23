@@ -24,9 +24,29 @@ Next we are going to pick a player in which we are interested, as long as it's f
 As mentioned before, worldfootballR has a function to scrape the scouting report.
 
 ```
-df_klich <- fb_player_scouting_report(https://fbref.com/en/players/282679b4/Mateusz-Klich)
+df <- fb_player_scouting_report(https://fbref.com/en/players/282679b4/Mateusz-Klich)
 head(df_klich)
 ```
+To colour them by type of the Statistic, we make a new column and fill it with "Attacking", "Possession" or "Defending"
+
+```
+df <- df %>% mutate(stat=case_when(Statistic == "Non-Penalty Goals"|
+                                               Statistic == "npxG"|
+                                               Statistic == "Shots Total"|
+                                               Statistic == "Assists"|
+                                               Statistic == "xA"|
+                                               Statistic == "npxG+xA"|
+                                               Statistic == "Shot-Creating Actions" ~ "Attacking",
+                                               Statistic == "Passes Attempted"|
+                                               Statistic == "Pass Completion %"|
+                                               Statistic == "Progressive Passes"|
+                                               Statistic == "Progressive Carries"|
+                                               Statistic == "Dribbles Completed"|
+                                               Statistic == "Touches (Att Pen)"|
+                                               Statistic == "Progressive Passes Rec" ~ "Possession",
+                                             TRUE ~ "Defending"))
+```
+
 
 
 ```
