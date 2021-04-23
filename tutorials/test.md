@@ -10,7 +10,7 @@ As I really like the radars from football slices (RIP) and the mplsoccer package
 <p align="center">
 <img width="400" alt="Pizza Plot" src="https://mplsoccer.readthedocs.io/en/latest/_images/sphx_glr_plot_pizza_colorful_001.png">
 </p>
-The Python package makes you enter te values yourself. For some leagues (Men's Big 5 Leagues and European Competition, Major League Soccer, Women's Super League) FBref has so called scouting reports with data from StatsBomb. These scouting reports do not only have the absolute numers for several metrics, but also the percentiles. 
+The Python package makes you enter te values yourself. For some leagues (Men's Big 5 Leagues and European Competition, Major League Soccer, Women's Super League) FBref has so called scouting reports with data from StatsBomb. These scouting reports do not only have the absolute numbers for several metrics, but also the percentiles. 
 The worldfootballR package let's you scrape them really easy. Let's start by setting up out environment. If needed, install the packages first.
 
   
@@ -28,3 +28,21 @@ df_klich <- fb_player_scouting_report(https://fbref.com/en/players/282679b4/Mate
 head(df_klich)
 ```
 
+
+```
+frenkie <- frenkie %>% mutate(stat=case_when(Statistic == "Non-Penalty Goals"|
+                                               Statistic == "npxG"|
+                                               Statistic == "Shots Total"|
+                                               Statistic == "Assists"|
+                                               Statistic == "xA"|
+                                               Statistic == "npxG+xA"|
+                                               Statistic == "Shot-Creating Actions" ~ "Attacking",
+                                               Statistic == "Passes Attempted"|
+                                               Statistic == "Pass Completion %"|
+                                               Statistic == "Progressive Passes"|
+                                               Statistic == "Progressive Carries"|
+                                               Statistic == "Dribbles Completed"|
+                                               Statistic == "Touches (Att Pen)"|
+                                               Statistic == "Progressive Passes Rec" ~ "Possession",
+                                             TRUE ~ "Defending"))
+```
