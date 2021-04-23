@@ -49,20 +49,4 @@ df <- df %>% mutate(stat=case_when(Statistic == "Non-Penalty Goals"|
 
 
 
-```
-frenkie <- frenkie %>% mutate(stat=case_when(Statistic == "Non-Penalty Goals"|
-                                               Statistic == "npxG"|
-                                               Statistic == "Shots Total"|
-                                               Statistic == "Assists"|
-                                               Statistic == "xA"|
-                                               Statistic == "npxG+xA"|
-                                               Statistic == "Shot-Creating Actions" ~ "Attacking",
-                                               Statistic == "Passes Attempted"|
-                                               Statistic == "Pass Completion %"|
-                                               Statistic == "Progressive Passes"|
-                                               Statistic == "Progressive Carries"|
-                                               Statistic == "Dribbles Completed"|
-                                               Statistic == "Touches (Att Pen)"|
-                                               Statistic == "Progressive Passes Rec" ~ "Possession",
-                                             TRUE ~ "Defending"))
-```
+
