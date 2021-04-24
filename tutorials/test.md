@@ -92,6 +92,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
                              "Defending" = "#FF9300")) +                                                              
   scale_y_continuous(limits = c(-10,100))+                                              #create the white part in the middle.   
   labs(fill="",                                                                         #remove legend title
+       caption = "Data from StatsBom via FBref",                                        #credit FBref/StatsBomb
        title=df_selected$player_name[1])+                                               #let the title be te name of the player
  
   theme_minimal() +                                                                     #from here it's only themeing. 
@@ -137,6 +138,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
                              "Defending" = "#FF9300")) +                                                              
   scale_y_continuous(limits = c(-10,100))+                                              #create the white part in the middle.   
   labs(fill="",                                                                         #remove legend title
+       caption = "Data from StatsBom via FBref",                                        #credit FBref/StatsBomb
        title=df_selected$player_name[1])+                                               #let the title be te name of the player
  
   theme_minimal() +                                                                     #from here it's only themeing. 
