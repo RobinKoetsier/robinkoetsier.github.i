@@ -112,7 +112,6 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
 <img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/first-1.png" style="width:400px">
       </a>
 </p>
-
 Doesn't look half bad, but the labels are horrible. Besides that we should add some extra information about the player. The labels need to be rotated so they look better. We can do this by hand, but if we change the number of metrics we're using we need to do it all over again. So let's just make a calculation that we can run everytime we make a new chart.
 
 ```r
@@ -213,4 +212,9 @@ Not too hard to do, right?
 
 {::options parse_block_html="false" /}
 
+Note: with coord_polar() in combination with a background colour, I need to trim te image afterwards. I do this with a commandline statement in my R session:
+
+```r
+system("convert -trim image.png image.png")
+```
 
