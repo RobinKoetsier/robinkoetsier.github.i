@@ -167,7 +167,7 @@ That looks much better! From here you can change everything you want. I'm going 
 <img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/third-2.png" style="width:400px">
       </a>
 </p>
-# A collapsible section with markdown
+
 <details>
   <summary>Click to expand!</summary>
   
