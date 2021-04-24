@@ -284,4 +284,58 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
 
 {::options parse_block_html="false" /}
 
+One with no background slices
 
+<p align="center">
+   <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/blank.png">
+<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/blank.png" style="width:400px">
+      </a>
+</p>
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">The code</summary>
+  
+```r
+ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      
+  geom_bar(aes(y=100),fill="#F2F4F5",stat="identity",width=1,colour="white",                
+           alpha=1,linetype="dashed") +                                                                          
+  geom_bar(stat="identity",width=1,fill="#D20222",colour="white") +   
+  geom_hline(yintercept=25, colour="white",linetype="longdash",alpha=0.5)+
+  geom_hline(yintercept=50, colour="white",linetype="longdash",alpha=0.5)+
+  geom_hline(yintercept=75, colour="white",linetype="longdash",alpha=0.5)+ 
+  geom_hline(yintercept=100, colour="white",alpha=0.5)+ 
+  coord_polar() +                                                                     
+  geom_label(aes(label=Per.90),fill="#D20222",size=2,color="white",show.legend = FALSE)+     
+  scale_fill_manual(values=c("Possession" = "#D70232",                                  
+                             "Attacking" = "#1A78CF",
+                             "Defending" = "#FF9300")) +                                                              
+  scale_y_continuous(limits = c(-10,100))+                                              
+  labs(fill="",   
+       caption = "Data from StatsBomb via FBref",     
+       #remove legend title
+       title=glue("{df_selected$player_name[1]} | Manchester United"),
+       subtitle = glue::glue("{df_selected$season} | Compared to midfielders Top 5 competitions | stats per 90"))+                                               
+  
+  theme_minimal() +                                                                     
+  theme(plot.background = element_rect(fill = "#F2F4F5",color = "#F2F4F5"),
+        panel.background = element_rect(fill = "#F2F4F5",color = "#F2F4F5"),
+        legend.position = "top",
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.text.x = element_text(size = 6, angle = ang),
+        text = element_text(family="Spartan-Light"),                                    
+        plot.title = element_markdown(hjust=0.5,family="Spartan-Medium"),
+        plot.subtitle = element_text(hjust=0.5,size=8),
+        plot.caption = element_text(hjust=0.5,size=6),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        plot.margin = margin(5,2,2,2)) 
+```
+
+
+</details>
+<br/>
+
+{::options parse_block_html="false" /}
