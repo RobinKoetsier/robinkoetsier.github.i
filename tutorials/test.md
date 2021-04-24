@@ -173,7 +173,7 @@ That looks much better! From here you can change everything you want. I'm going 
 <details><summary markdown="span">Let's see de final code!</summary>
   
 ```r
-ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      #select the columns to plot and sort it so the types of metric are grouped
+ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                       #select the columns to plot and sort it so the types of metric are grouped
   geom_bar(aes(y=100,fill=stat),stat="identity",width=1,colour="white",                 #make the whole pizza first
   alpha=0.5) +                                                                          #change alphe to make it more or less visible
   geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
@@ -187,7 +187,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
        caption = "Data from StatsBomb via FBref",     
        #remove legend title
        title=glue("{df_selected$player_name[1]} | Leeds United"),
-        subtitle = glue::glue("{df_selected$season} | Compared to midfielder Top 5 competitions | stats per 90"))+                                                #let the title be te name of the player 
+        subtitle = glue::glue("{df_selected$season} | Compared to midfielder Top 5 competitions | stats per 90"))+ #let the title be te name of the player                                                
  
   theme_minimal() +                                                                     #from here it's only themeing. 
   theme(plot.background = element_rect(fill = "#F2F4F5",color = "#F2F4F5"),
@@ -206,7 +206,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
         plot.margin = margin(5,2,2,2)) 
 ```
 
-Of course, it has to be Hello Worlds, right?
+Not too hard to do, right?
 </details>
 <br/>
 
