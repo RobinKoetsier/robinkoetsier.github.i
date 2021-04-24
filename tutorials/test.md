@@ -171,6 +171,8 @@ That looks much better! From here you can change everything you want. I'm going 
 <details>
   <summary>Click to see finale code!</summary>
   
+  <p>
+  
  ```r
  
  ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      #select the columns to plot and sort it so the types of metric are grouped
@@ -206,6 +208,8 @@ That looks much better! From here you can change everything you want. I'm going 
         plot.margin = margin(5,2,2,2)) 
         
  ```
+ 
+ </p>
  
 </details>
 
