@@ -27,6 +27,8 @@ library(forcats)         #for sorting within ggplot
 library(glue)            #easier than paste()
 ```
 
+I'm using the 'Spartan' font in all my plots, but you can use your own ofcourse. The extrafont package has a lot of nice fonts.
+
 Next we are going to pick a player in which we are interested, as long as it's from the leagues mentioned earlier. I'm choosing Mateusz Klich, but you can pick someone else, I'm not judging you.
 As mentioned before, worldfootballR has a function to scrape the scouting report.
 
