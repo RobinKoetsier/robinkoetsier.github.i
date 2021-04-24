@@ -217,4 +217,4 @@ Note: with coord_polar() in combination with a background colour, I need to trim
 ```r
 system("convert -trim image.png new_image.png")
 ```
-Where image.png is my just saved iamge and new_image.png will met the trimmed one. If an
+Where image.png is my just saved iamge and new_image.png will met the trimmed one. 
