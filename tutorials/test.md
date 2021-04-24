@@ -163,8 +163,8 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
 That looks much better! From here you can change everything you want. I'm going to add a subtitle, and make some theme adjustments. 
 
 <p align="center">
-   <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/third-1.png">
-<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/third-1.png" style="width:400px">
+   <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/third-2.png">
+<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/third-2.png" style="width:400px">
       </a>
 </p>
 # A collapsible section with markdown
