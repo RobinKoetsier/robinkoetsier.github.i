@@ -225,3 +225,13 @@ ggsave("image.png",bg="#F2F4F5")
 ```
 
 I prefer to trim it, as it removes unnecessary parts from the plot.
+
+
+
+<p align="center">
+   <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/athe1.png">
+<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/athe1.png" style="width:400px">
+      </a>
+</p>
+
+
