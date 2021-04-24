@@ -160,4 +160,4 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
       </a>
 </p>
 
-That looks much better! From here you can change everything you want. I'm going to add a subtitle, swap the legend with coloured text and make some theme adjustments. 
+That looks much better! From here you can change everything you want. I'm going to add a subtitle, and make some theme adjustments. 
