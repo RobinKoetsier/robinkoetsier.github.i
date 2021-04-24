@@ -213,7 +213,7 @@ That looks much better! From here you can change everything you want. I'm going 
  
 </details>
 
-
+{::options parse_block_html="true" /}
 
 <details><summary markdown="span">Let's see some code!</summary>
 ```r
@@ -254,6 +254,6 @@ That looks much better! From here you can change everything you want. I'm going 
 Of course, it has to be Hello World, right?
 </details>
 <br/>
-
+{::options parse_block_html="false" /}
 
 
