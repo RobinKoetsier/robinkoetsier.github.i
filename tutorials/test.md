@@ -160,7 +160,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
       </a>
 </p>
 
-That looks much better! From here you can change everything you want. I'm going to add a subtitle, and make some theme adjustments. 
+That looks much better! From here you can change everything you want. I'm going to add a subtitle, and make some theme adjustments. Adding a picture is something I will add to this tutorial in the future.
 
 <p align="center">
    <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/third-2.png">
