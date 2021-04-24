@@ -212,9 +212,9 @@ Not too hard to do, right?
 
 {::options parse_block_html="false" /}
 
-Note: with coord_polar() in combination with a background colour, I need to trim te image afterwards. I do this with a commandline statement in my R session:
+Note: with coord_polar() in combination with a background colour, I need to trim the image afterwards. I do this with a commandline statement in my R session:
 
 ```r
-system("convert -trim image.png image.png")
+system("convert -trim image.png new_image.png")
 ```
-
+Where image.png is my just saved iamge and new_image.png will met the trimmed one. If an
