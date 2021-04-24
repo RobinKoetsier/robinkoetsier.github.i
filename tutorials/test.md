@@ -168,54 +168,9 @@ That looks much better! From here you can change everything you want. I'm going 
       </a>
 </p>
 
-<details>
-  <summary>Click to see finale code!</summary>
-  
-  <p>
-  
- ```r
- 
- ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      #select the columns to plot and sort it so the types of metric are grouped
-  geom_bar(aes(y=100,fill=stat),stat="identity",width=1,colour="white",                 #make the whole pizza first
-  alpha=0.5) +                                                                          #change alphe to make it more or less visible
-  geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
-  coord_polar() +                                                                       #make it round
-  geom_label(aes(label=Per.90,fill=stat),size=2,color="white",show.legend = FALSE)+     #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
- scale_fill_manual(values=c("Possession" = "#D70232",                                   #choose colors to fill the pizza parts
-                             "Attacking" = "#1A78CF",
-                             "Defending" = "#FF9300")) +                                                              
-  scale_y_continuous(limits = c(-10,100))+                                              #create the white part in the middle.   
-  labs(fill="",   
-       caption = "Data from StatsBomb via FBref",     
-       #remove legend title
-       title=glue("{df_selected$player_name[1]} | Leeds United"),
-        subtitle = glue::glue("{df_selected$season} | Compared to midfielder Top 5 competitions | stats per 90"))+                                                #let the title be te name of the player 
- 
-  theme_minimal() +                                                                     #from here it's only themeing. 
-  theme(plot.background = element_rect(fill = "#F2F4F5",color = "#F2F4F5"),
-        panel.background = element_rect(fill = "#F2F4F5",color = "#F2F4F5"),
-        legend.position = "top",
-        axis.title.y = element_blank(),
-        axis.title.x = element_blank(),
-        axis.text.y = element_blank(),
-         axis.text.x = element_text(size = 6, angle = ang),
-        text = element_text(family="Spartan-Light"),                                    #I downloaded this font from Google Fonts. You can use your own font of course
-        plot.title = element_markdown(hjust=0.5,family="Spartan-Medium"),
-        plot.subtitle = element_text(hjust=0.5,size=8),
-        plot.caption = element_text(hjust=0.5,size=6),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        plot.margin = margin(5,2,2,2)) 
-        
- ```
- 
- </p>
- 
-</details>
-
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Let's see de final code!</summary>
 ```r
 ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      #select the columns to plot and sort it so the types of metric are grouped
   geom_bar(aes(y=100,fill=stat),stat="identity",width=1,colour="white",                 #make the whole pizza first
