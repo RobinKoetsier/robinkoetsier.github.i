@@ -155,8 +155,8 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
         panel.grid.minor = element_blank()) 
 ```
 <p align="center">
-   <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/second.png">
-<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/second.png" style="width:400px">
+   <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/second-1.png">
+<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/second-1.png" style="width:400px">
       </a>
 </p>
 
