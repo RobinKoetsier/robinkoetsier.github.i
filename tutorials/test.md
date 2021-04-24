@@ -187,7 +187,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
        caption = "Data from StatsBomb via FBref",     
        #remove legend title
        title=glue("{df_selected$player_name[1]} | Leeds United"),
-        subtitle = glue::glue("{df_selected$season} | Compared to midfielder Top 5 competitions | stats per 90"))+ #let the title be te name of the player                                                
+        subtitle = glue::glue("{df_selected$season} | Compared to midfielders Top 5 competitions | stats per 90"))+ #let the title be te name of the player                                                
  
   theme_minimal() +                                                                     #from here it's only themeing. 
   theme(plot.background = element_rect(fill = "#F2F4F5",color = "#F2F4F5"),
