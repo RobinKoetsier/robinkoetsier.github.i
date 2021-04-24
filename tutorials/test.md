@@ -218,3 +218,10 @@ Note: with coord_polar() in combination with a background colour, I need to trim
 system("convert -trim image.png new_image.png")
 ```
 Where image.png is my just saved image and new_image.png will be the trimmed one. 
+There is also an option to add the color to ggsave:
+
+```r
+ggsave("image.png",bg="#F2F4F5")
+```
+
+
