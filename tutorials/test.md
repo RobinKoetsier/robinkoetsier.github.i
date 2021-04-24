@@ -339,3 +339,77 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
 <br/>
 
 {::options parse_block_html="false" /}
+
+One with other labels
+
+<p align="center">
+   <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/label.png">
+<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/label.png" style="width:400px">
+      </a>
+</p>
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">The code</summary>
+  
+```r
+label_data <- df_selected
+
+# calculate the ANGLE of the labels
+number_of_bar <- nrow(label_data)
+label_data$id <- seq(1,length(label_data$player_name))
+angle <-  90 - 360 * (label_data$id-0.5) /number_of_bar     # I substract 0.5 because the letter must have the angle of the center of the bars. Not extreme right(1) or extreme left (0)
+
+# calculate the alignment of labels: right or left
+# If I am on the left part of the plot, my labels have currently an angle < -90
+label_data$hjust<-ifelse( angle < -90, 1, 0)
+
+# flip angle BY to make them readable
+label_data$angle<-ifelse(angle < -90, angle+180, angle)
+
+
+
+ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      
+  geom_bar(aes(y=100),fill="#F2F4F5",stat="identity",width=1,colour="#0066B2",                
+           alpha=1,linetype="dashed") +                                                                          
+  geom_bar(stat="identity",width=1,fill="#CC0033",colour="white") +   
+  geom_hline(yintercept=25, colour="white",linetype="longdash",alpha=0.5)+
+  geom_hline(yintercept=50, colour="white",linetype="longdash",alpha=0.5)+
+  geom_hline(yintercept=75, colour="white",linetype="longdash",alpha=0.5)+ 
+  geom_hline(yintercept=100, colour="white",alpha=0.5)+ 
+  coord_polar() +                                                                     
+  geom_label(aes(label=Per.90),fill="#CC0033",size=2,color="white",show.legend = FALSE)+     
+  scale_fill_manual(values=c("Possession" = "#D70232",                                  
+                             "Attacking" = "#1A78CF",
+                             "Defending" = "#FF9300")) +                                                              
+  scale_y_continuous(limits = c(-10,110))+                                              
+  labs(fill="",   
+       caption = "Data from StatsBomb via FBref",     
+       #remove legend title
+       title=glue("{df_selected$player_name[1]} | Bayern Munich"),
+       subtitle = glue::glue("{df_selected$season} | Compared to attackers Top 5 competitions | stats per 90"))+                                               
+  geom_text(data=label_data, aes(x=id, y=100+10, label=Statistic, hjust=hjust), 
+      color="#0066B2", fontface="bold",alpha=0.6, size=2.5, angle= label_data$angle, inherit.aes = FALSE )  +
+  theme_minimal() +                                                                     
+  theme(plot.background = element_rect(fill = "#F2F4F5",color = "#F2F4F5"),
+        panel.background = element_rect(fill = "#F2F4F5",color = "#F2F4F5"),
+        legend.position = "top",
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(),
+       # axis.text.x = element_text(size = 6, angle = ang),
+        axis.text.x = element_blank(),
+        text = element_text(family="Spartan-Light"),                                    
+        plot.title = element_markdown(hjust=0.5,family="Spartan-Medium"),
+        plot.subtitle = element_text(hjust=0.5,size=8),
+        plot.caption = element_text(hjust=0.5,size=6),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        plot.margin = margin(5,2,2,2)) 
+```
+
+
+</details>
+<br/>
+
+{::options parse_block_html="false" /}
