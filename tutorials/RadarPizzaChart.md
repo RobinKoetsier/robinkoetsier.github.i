@@ -56,7 +56,7 @@ df <- df %>%
                                  TRUE ~ "Defending"))
 ```
 
-Now we can use this column to color the chart. I'm not interested in every metric though. The 'npxG+xA' column for example. I already have those metrics in my chart. To pick the metrics you want/don't want, print the Statistic column and choose.
+Now we can use this column to color the chart. I'm not interested in every metric though. The 'npxG+xA' column for instance. I already have those metrics each in my chart. To pick the metrics you want/don't want, print the Statistic column and choose.
 
 ```r
 print(df$Statistic)
