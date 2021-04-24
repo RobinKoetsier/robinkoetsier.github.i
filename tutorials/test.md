@@ -98,7 +98,9 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
         panel.grid.minor = element_blank()) 
 ```
 <p align="center">
-<img width="400" alt="Pizza Plot" src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/first.png">
+  <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/first.png">
+<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/first.png"
+     style="width:400px">
 </p>
 
 Doesn't look half bad, but the labels are horrible. Besides that we should add some extra information about the player. The labels need to be rotated so they look better. We can do this by hand, but if we change the number of metrics we're using we need to do it all over again. So let's just make a calculation that we can run everytime we make a new chart.
@@ -114,5 +116,6 @@ Because some labels are rather long ('Progressive Passes Rec' for instance) I de
 ```r
 df_selected$Statistic <- gsub(" ","\n",df_selected$Statistic)
 ```
+
 
 
