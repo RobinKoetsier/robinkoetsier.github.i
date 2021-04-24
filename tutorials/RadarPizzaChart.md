@@ -23,7 +23,7 @@ The worldfootballR package let's you scrape them really easy. Let's start by set
 ```r
 library(worldfootballR)  #for scraping
 library(tidyverse)       #for ggplot, dplyr and several other stuff
-library(ggtext)          #for text manipulation
+library(forcats)         #for sorting within ggplot
 library(glue)            #easier than paste()
 ```
 
