@@ -161,3 +161,15 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
 </p>
 
 That looks much better! From here you can change everything you want. I'm going to add a subtitle, and make some theme adjustments. 
+
+
+# A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
