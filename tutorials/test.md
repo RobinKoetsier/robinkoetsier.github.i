@@ -82,7 +82,8 @@ To make the pizza chart, we will use geom_bar() with coord_polar(). It's a neat 
 
 ```r
 ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                       #select the columns to plot and sort it so the types of metric are grouped
-  geom_bar(aes(y=100,fill=stat),stat="identity",width=1,colour="white",alpha=0.5) +     #make the whole pizza first
+  geom_bar(aes(y=100,fill=stat),stat="identity",width=1,colour="white",                 #make the whole pizza first
+  alpha=0.5) +                                                                          #change alphe to make it more or less visible
   geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
   coord_polar() +                                                                       #make it round
   geom_label(aes(label=Per.90,fill=stat),size=2,color="white",show.legend = FALSE)+     #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
@@ -122,6 +123,36 @@ Because some labels are rather long ('Progressive Passes Rec' for instance) I de
 ```r
 df_selected$Statistic <- gsub(" ","\n",df_selected$Statistic)
 ```
+If we plot again and add an extra line we will get a better plot.
 
-
+```r
+ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                       #select the columns to plot and sort it so the types of metric are grouped
+  geom_bar(aes(y=100,fill=stat),stat="identity",width=1,colour="white",                 #make the whole pizza first
+  alpha=0.5) +                                                                          #change alphe to make it more or less visible
+  geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
+  coord_polar() +                                                                       #make it round
+  geom_label(aes(label=Per.90,fill=stat),size=2,color="white",show.legend = FALSE)+     #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
+ scale_fill_manual(values=c("Possession" = "#D70232",                                   #choose colors to fill the pizza parts
+                             "Attacking" = "#1A78CF",
+                             "Defending" = "#FF9300")) +                                                              
+  scale_y_continuous(limits = c(-10,100))+                                              #create the white part in the middle.   
+  labs(fill="",                                                                         #remove legend title
+       title=df_selected$player_name[1])+                                               #let the title be te name of the player
+ 
+  theme_minimal() +                                                                     #from here it's only themeing. 
+  theme(legend.position = "top",
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(),
+         axis.text.x = element_text(size = 6, angle = ang),
+        text = element_text(family="Spartan-Light"),                                    #I downloaded this font from Google Fonts. You can use your own font of course
+        plot.title = element_text(hjust=0.5),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank()) 
+```
+<p align="center">
+   <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/second.png">
+<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/first.second" style="width:400px">
+      </a>
+</p>
 
