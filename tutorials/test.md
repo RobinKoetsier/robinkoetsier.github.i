@@ -224,4 +224,4 @@ There is also an option to add the color to ggsave:
 ggsave("image.png",bg="#F2F4F5")
 ```
 
-
+I prefer to trim it, as it removes unnecessary parts from the plot.
