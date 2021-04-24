@@ -226,12 +226,62 @@ ggsave("image.png",bg="#F2F4F5")
 
 I prefer to trim it, as it removes unnecessary parts from the plot.
 
+###### Some more styles
 
-
+The Athletic/ Tom Worville
 <p align="center">
    <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/athe1.png">
 <img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/athe1.png" style="width:400px">
       </a>
 </p>
+
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">The code</summary>
+  
+```r
+ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                       
+  geom_bar(aes(y=100),fill="#131313",stat="identity",width=1,colour="#797979",                 
+  alpha=0.5,show.legend = FALSE) +      
+  
+  
+  geom_bar(stat="identity",width=1,aes(fill=stat),colour="#F3FEFC",alpha=1) +                     
+  coord_polar(clip = "off") +                                                                      
+     geom_hline(yintercept=25, colour="#565656",linetype="longdash",alpha=0.5)+
+  geom_hline(yintercept=50, colour="#565656",linetype="longdash",alpha=0.5)+
+  geom_hline(yintercept=75, colour="#565656",linetype="longdash",alpha=0.5)+ 
+ scale_fill_manual(values=c("Possession" = "#1ADA89",                                   
+                             "Attacking" = "#0F70BF",
+                             "Defending" = "#EC313A")) +                                                        
+   geom_label(aes(label=Percentile,fill=stat),size=2,color="white",show.legend = FALSE)+ 
+  scale_y_continuous(limits = c(-20,100))+                                              
+  labs(fill="",   
+       caption = "Data from StatsBomb via FBref\nStyle copied from The Athletic/@worville",     
+       #remove legend title
+       title=glue("{df_selected$player_name[1]} | Leeds United"),
+        subtitle = glue::glue("{df_selected$season} | Compared to midfielders Top 5 competitions | stats per 90"))+                                                
+  theme_minimal() +                                                                     
+  theme(plot.background = element_rect(fill = "#131313",color = "#131313"),
+        panel.background = element_rect(fill = "#131313",color = "#131313"),
+        legend.position = "bottom",
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.text.x = element_text(size = 6,colour = "#FFFFFF"),
+        text = element_text(family="Spartan-Light",colour= "#FEFEFE"),                                   
+        plot.title = element_markdown(hjust=0.5,family="Spartan-Medium"),
+        plot.subtitle = element_text(hjust=0.5,size=8),
+        plot.caption = element_text(hjust=0.5,size=6),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        plot.margin = margin(5,4,2,4)) 
+```
+
+
+</details>
+<br/>
+
+{::options parse_block_html="false" /}
 
 
