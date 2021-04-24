@@ -171,6 +171,7 @@ That looks much better! From here you can change everything you want. I'm going 
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">Let's see de final code!</summary>
+  
 ```r
 ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      #select the columns to plot and sort it so the types of metric are grouped
   geom_bar(aes(y=100,fill=stat),stat="identity",width=1,colour="white",                 #make the whole pizza first
@@ -204,6 +205,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
         panel.grid.minor = element_blank(),
         plot.margin = margin(5,2,2,2)) 
 ```
+
 Of course, it has to be Hello Worlds, right?
 </details>
 <br/>
