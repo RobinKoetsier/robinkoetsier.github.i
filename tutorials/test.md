@@ -72,7 +72,7 @@ df_selected <- df[c(1:5,7:13,17,19,20),]
 
 You will get the same result.
 
-To mak the pizza chart, we will use geom_bar() with coord_polar(). It's a neat little trick as there isn't a good package to do it otherwise. 
+To make the pizza chart, we will use geom_bar() with coord_polar(). It's a neat little trick as there isn't a good package to do it otherwise. 
 
 ```r
 ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                       #select the columns to plot and sort it so the types of metric are grouped
@@ -80,11 +80,12 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
   geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
   coord_polar() +                                                                       #make it round
   geom_label(aes(label=Per.90,fill=stat),size=2,color="white",show.legend = FALSE)+     #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
-  scale_fill_manual(values=c("Possession" = "red",                                      #choose colors to fill the pizza parts
-                             "Attacking" = "blue",
-                             "Defending" = "orange")) +
+ scale_fill_manual(values=c("Possession" = "#D70232",                                   #choose colors to fill the pizza parts
+                             "Attacking" = "#1A78CF",
+                             "Defending" = "#FF9300")) +                                                              
   scale_y_continuous(limits = c(-10,100))+                                              #create the white part in the middle.   
-  labs(title=df_selected$player_name[1])+                                               #let the title be te name of the player
+  labs(fill="",                                                                         #remove legend title
+       title=df_selected$player_name[1])+                                               #let the title be te name of the player
  
   theme_minimal() +                                                                     #from here it's only themeing. 
   theme(legend.position = "top",
@@ -96,9 +97,22 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank()) 
 ```
+<p align="center">
+<img width="400" alt="Pizza Plot" src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/first.png">
+</p>
 
+Doesn't look half bad, but the labels are horrible. Besides that we should add some extra information about the player. The labels need to be rotated so they look better. We can do this by hand, but if we change the number of metrics we're using we need to do it all over again. So let's just make a calculation that we can run everytime we make a new chart.
 
+```r
+temp <- (360/(length(df_selected$player_name))/2)                             #find the difference in angle between to labels and divide by two.
+myAng <- seq(-temp, -360+temp, length.out = length(df_selected$player_name))  #get the angle for every label
+ang<-ifelse(myAng < -90, myAng+180, myAng)                                    #rotate label by 180 in some places for readability
+ang<-ifelse(ang < -90, ang+180, ang)                                          #rotate some lables back for readability...
+```
+Because some labels are rather long ('Progressive Passes Rec' for instance) I decided to let every word start on a new line. I used gsub for that
 
-
+```r
+df_selected$Statistic <- gsub(" ","\n",df_selected$Statistic)
+```
 
 
