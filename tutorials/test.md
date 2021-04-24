@@ -36,21 +36,22 @@ df <- fb_player_scouting_report(https://fbref.com/en/players/282679b4/Mateusz-Kl
 To colour them by type of the Statistic, we make a new column and fill it with "Attacking", "Possession" or "Defending". 
 
 ```r
-df <- df %>% mutate(stat=case_when(Statistic == "Non-Penalty Goals"|
-                                               Statistic == "npxG"|
-                                               Statistic == "Shots Total"|
-                                               Statistic == "Assists"|
-                                               Statistic == "xA"|
-                                               Statistic == "npxG+xA"|
-                                               Statistic == "Shot-Creating Actions" ~ "Attacking",
-                                               Statistic == "Passes Attempted"|
-                                               Statistic == "Pass Completion %"|
-                                               Statistic == "Progressive Passes"|
-                                               Statistic == "Progressive Carries"|
-                                               Statistic == "Dribbles Completed"|
-                                               Statistic == "Touches (Att Pen)"|
-                                               Statistic == "Progressive Passes Rec" ~ "Possession",
-                                             TRUE ~ "Defending"))
+df <- df %>% 
+      mutate(stat=case_when(Statistic == "Non-Penalty Goals"|
+                            Statistic == "npxG"|
+                            Statistic == "Shots Total"|
+                            Statistic == "Assists"|
+                            Statistic == "xA"|
+                            Statistic == "npxG+xA"|
+                            Statistic == "Shot-Creating Actions" ~ "Attacking",
+                            Statistic == "Passes Attempted"|
+                            Statistic == "Pass Completion %"|
+                            Statistic == "Progressive Passes"|
+                            Statistic == "Progressive Carries"|
+                            Statistic == "Dribbles Completed"|
+                            Statistic == "Touches (Att Pen)"|
+                            Statistic == "Progressive Passes Rec" ~ "Possession",
+                                 TRUE ~ "Defending"))
 ```
 
 Now we can use this column to color the chart. I'm not interested in every metric though. The 'npxG+xA' column for example. I already have those metrics in my chart. To pick the metrics you want/don't want, print the Statistic column and choose.
