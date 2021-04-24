@@ -340,7 +340,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
 
 {::options parse_block_html="false" /}
 
-One with other labels
+One with other labels and background slices
 
 <p align="center">
    <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/label.png">
@@ -370,15 +370,15 @@ label_data$angle<-ifelse(angle < -90, angle+180, angle)
 
 
 ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      
-  geom_bar(aes(y=100),fill="#F2F4F5",stat="identity",width=1,colour="#0066B2",                
-           alpha=1,linetype="dashed") +                                                                          
+  geom_bar(aes(y=100),fill="#0066B2",stat="identity",width=1,colour="#0066B2",                
+           alpha=0.4,linetype="dashed") +                                                                          
   geom_bar(stat="identity",width=1,fill="#CC0033",colour="white") +   
   geom_hline(yintercept=25, colour="white",linetype="longdash",alpha=0.5)+
   geom_hline(yintercept=50, colour="white",linetype="longdash",alpha=0.5)+
   geom_hline(yintercept=75, colour="white",linetype="longdash",alpha=0.5)+ 
   geom_hline(yintercept=100, colour="white",alpha=0.5)+ 
   coord_polar() +                                                                     
-  geom_label(aes(label=Per.90),fill="#CC0033",size=2,color="white",show.legend = FALSE)+     
+  geom_label(aes(label=Per.90),fill="#CC0033",size=2,color="white",show.legend = FALSE,family="Spartan-Bold")+     
   scale_fill_manual(values=c("Possession" = "#D70232",                                  
                              "Attacking" = "#1A78CF",
                              "Defending" = "#FF9300")) +                                                              
