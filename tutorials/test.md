@@ -102,6 +102,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
         axis.text.y = element_blank(),
         text = element_text(family="Spartan-Light"),                                    #I downloaded this font from Google Fonts. You can use your own font of course
         plot.title = element_text(hjust=0.5),
+        plot.caption = element_text(hjust=0.5),
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank()) 
 ```
@@ -149,6 +150,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
          axis.text.x = element_text(size = 6, angle = ang),
         text = element_text(family="Spartan-Light"),                                    #I downloaded this font from Google Fonts. You can use your own font of course
         plot.title = element_text(hjust=0.5),
+        plot.caption = element_text(hjust=0.5),
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank()) 
 ```
