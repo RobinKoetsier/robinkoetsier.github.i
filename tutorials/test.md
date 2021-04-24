@@ -79,18 +79,17 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
   geom_bar(aes(y=100,fill=stat),stat="identity",width=1,colour="white",alpha=0.5) +     #make the whole pizza first
   geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
   coord_polar() +                                                                       #make it round
-  geom_label(aes(label=Per.90,fill=stat),size=2,color="white")+                         #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
-  scale_fill_manual(values=c("Possession" = "red",
+  geom_label(aes(label=Per.90,fill=stat),size=2,color="white",show.legend = FALSE)+     #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
+  scale_fill_manual(values=c("Possession" = "red",                                      #choose colors to fill the pizza parts
                              "Attacking" = "blue",
                              "Defending" = "orange")) +
-  scale_y_continuous(limits = c(-10,110))+
-  labs(x="",
-       y="",
-       title=df_selected$player_name[1])+
+  scale_y_continuous(limits = c(-10,100))+                                              #create the white part in the middle.   
+  labs(title=df_selected$player_name[1])+                                               #let the title be te name of the player
  
-  theme_minimal() +
-  theme(legend.position = "none",
+  theme_minimal() +                                                                     #from here it's only themeing. 
+  theme(legend.position = "top",
         axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
         axis.text.y = element_blank(),
         text = element_text(family="Spartan-Light"),
         plot.title = element_text(hjust=0.5),
