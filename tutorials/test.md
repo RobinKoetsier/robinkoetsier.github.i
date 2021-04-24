@@ -216,9 +216,8 @@ That looks much better! From here you can change everything you want. I'm going 
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">Let's see some code!</summary>
-```r
- 
- ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      #select the columns to plot and sort it so the types of metric are grouped
+```python
+ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      #select the columns to plot and sort it so the types of metric are grouped
   geom_bar(aes(y=100,fill=stat),stat="identity",width=1,colour="white",                 #make the whole pizza first
   alpha=0.5) +                                                                          #change alphe to make it more or less visible
   geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
@@ -249,11 +248,11 @@ That looks much better! From here you can change everything you want. I'm going 
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank(),
         plot.margin = margin(5,2,2,2)) 
-        
- ```
-Of course, it has to be Hello World, right?
+```
+Of course, it has to be Hello Worlds, right?
 </details>
 <br/>
+
 {::options parse_block_html="false" /}
 
 
