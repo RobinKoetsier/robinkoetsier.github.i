@@ -172,7 +172,8 @@ That looks much better! From here you can change everything you want. I'm going 
   <summary>Click to see finale code!</summary>
   
  ```r
- gplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                       #select the columns to plot and sort it so the types of metric are grouped
+ 
+ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      #select the columns to plot and sort it so the types of metric are grouped
   geom_bar(aes(y=100,fill=stat),stat="identity",width=1,colour="white",                 #make the whole pizza first
   alpha=0.5) +                                                                          #change alphe to make it more or less visible
   geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
@@ -205,6 +206,7 @@ That looks much better! From here you can change everything you want. I'm going 
         plot.margin = margin(5,2,2,2)) 
         
  ```
+ 
 </details>
 
 Of course you can go wild. Here are some examples:
