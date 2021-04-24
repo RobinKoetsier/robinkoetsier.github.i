@@ -58,6 +58,45 @@ print(df$Statistic)
 [17] "Interceptions"          "Blocks"                 "Clearances"             "Aerials won"        
 ```
 
+I decided to exclude some instead of picking the one to include. This was purely because is was less code.
+
+```r
+df_selected <- df[-c(6,14,15,16,18),]
+```
+
+If you want to pick your metric, use the same statement without the minus sign. So:
+
+```r
+df_selected <- df[c(1:5,7:13,17,19,20),]
+```
+
+You will get the same result.
+
+To mak the pizza chart, we will use geom_bar() with coord_polar(). It's a neat little trick as there isn't a good package to do it otherwise. 
+
+```r
+ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                       #select the columns to plot and sort it so the types of metric are grouped
+  geom_bar(aes(y=100,fill=stat),stat="identity",width=1,colour="white",alpha=0.5) +     #make the whole pizza first
+  geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
+  coord_polar() +                                                                       #make it round
+  geom_label(aes(label=Per.90,fill=stat),size=2,color="white")+                         #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
+  scale_fill_manual(values=c("Possession" = "red",
+                             "Attacking" = "blue",
+                             "Defending" = "orange")) +
+  scale_y_continuous(limits = c(-10,110))+
+  labs(x="",
+       y="",
+       title=df_selected$player_name[1])+
+ 
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        text = element_text(family="Spartan-Light"),
+        plot.title = element_text(hjust=0.5),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank()) 
+```
 
 
 
