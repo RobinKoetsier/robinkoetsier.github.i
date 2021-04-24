@@ -92,7 +92,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
                              "Defending" = "#FF9300")) +                                                              
   scale_y_continuous(limits = c(-10,100))+                                              #create the white part in the middle.   
   labs(fill="",                                                                         #remove legend title
-       caption = "Data from StatsBom via FBref",                                        #credit FBref/StatsBomb
+       caption = "Data from StatsBomb via FBref",                                        #credit FBref/StatsBomb
        title=df_selected$player_name[1])+                                               #let the title be te name of the player
  
   theme_minimal() +                                                                     #from here it's only themeing. 
@@ -102,7 +102,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
         axis.text.y = element_blank(),
         text = element_text(family="Spartan-Light"),                                    #I downloaded this font from Google Fonts. You can use your own font of course
         plot.title = element_text(hjust=0.5),
-        plot.caption = element_text(hjust=0.5),
+        plot.caption = element_text(hjust=0.5,size=6),
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank()) 
 ```
@@ -139,7 +139,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
                              "Defending" = "#FF9300")) +                                                              
   scale_y_continuous(limits = c(-10,100))+                                              #create the white part in the middle.   
   labs(fill="",                                                                         #remove legend title
-       caption = "Data from StatsBom via FBref",                                        #credit FBref/StatsBomb
+       caption = "Data from StatsBomb via FBref",                                        #credit FBref/StatsBomb
        title=df_selected$player_name[1])+                                               #let the title be te name of the player
  
   theme_minimal() +                                                                     #from here it's only themeing. 
@@ -147,10 +147,10 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
         axis.title.y = element_blank(),
         axis.title.x = element_blank(),
         axis.text.y = element_blank(),
-         axis.text.x = element_text(size = 6, angle = ang),
+        axis.text.x = element_text(size = 6, angle = ang),
         text = element_text(family="Spartan-Light"),                                    #I downloaded this font from Google Fonts. You can use your own font of course
         plot.title = element_text(hjust=0.5),
-        plot.caption = element_text(hjust=0.5),
+        plot.caption = element_text(hjust=0.5,size=6),
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank()) 
 ```
