@@ -24,6 +24,7 @@ The worldfootballR package let's you scrape them really easy. Let's start by set
 library(worldfootballR)  #for scraping
 library(tidyverse)       #for ggplot, dplyr and several other stuff
 library(ggtext)          #for text manipulation
+library(glue)            #easier than paste()
 ```
 
 Next we are going to pick a player in which we are interested, as long as it's from the leagues mentioned earlier. I'm choosing Mateusz Klich, but you can pick someone else, I'm not judging you.
@@ -31,7 +32,6 @@ As mentioned before, worldfootballR has a function to scrape the scouting report
 
 ```
 df <- fb_player_scouting_report(https://fbref.com/en/players/282679b4/Mateusz-Klich)
-head(df_klich)
 ```
 To colour them by type of the Statistic, we make a new column and fill it with "Attacking", "Possession" or "Defending". 
 
@@ -160,3 +160,4 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
       </a>
 </p>
 
+That looks much better! From here you can change everything you want. I'm going to add a subtitle, swap the legend with coloured text and make some theme adjustments. 
