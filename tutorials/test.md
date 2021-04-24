@@ -92,7 +92,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
         axis.title.y = element_blank(),
         axis.title.x = element_blank(),
         axis.text.y = element_blank(),
-        text = element_text(family="Spartan-Light"),
+        text = element_text(family="Spartan-Light"),                                    #I downloaded this font from Google Fonts. You can use your own font of course
         plot.title = element_text(hjust=0.5),
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank()) 
