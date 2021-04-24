@@ -213,15 +213,3 @@ That looks much better! From here you can change everything you want. I'm going 
  
 </details>
 
-Of course you can go wild. Here are some examples:
-
-<details><summary>stuff with *mark* **down**</summary><p>
-
-## _formatted_ **heading** with [a](link)
-
----
-{{standard 3-backtick code block omitted from here due to escaping issues}}
----
-
-Collapsible until here.
-</p></details>
