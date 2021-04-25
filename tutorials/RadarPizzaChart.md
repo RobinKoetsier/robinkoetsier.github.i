@@ -5,7 +5,7 @@ date:   24-04-2021
 blurb: "Making radars"
 og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/second_post/0.jpg
 ---
-[Getting and preparing the data ](#getting-and-preparing-the-data)
+[Getting and preparing the data](#getting-and-preparing-the-data)
 
 [Making the chart](#making-the-chart)
 
