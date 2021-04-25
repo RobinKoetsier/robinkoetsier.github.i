@@ -8,12 +8,9 @@ og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.i
 
 ### Table of Contents
 
-[Intro](#intro)
-
-[Getting and preparing the data](#getting-and-preparing-the-data)
-
-[Making the chart](#making-the-chart)
-
+[Intro](#intro)  
+[Getting and preparing the data](#getting-and-preparing-the-data)  
+[Making the chart](#making-the-chart)  
 [Some other (well known) styles](#some-other-well-known-styles)
 * [The Athletic/ Tom Worville](#the-athletic-tom-worville)
 * [Football Slices](#football-slices)
