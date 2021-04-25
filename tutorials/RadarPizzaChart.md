@@ -6,6 +6,7 @@ blurb: "Making radars"
 og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/second_post/0.jpg
 ---
 [Getting and preparing the data ](#getting-and-preparing-the-data)
+[Making the chart](#making-the-chart)
 
 As I really like the radars/pizza charts from football slices (RIP) and the mplsoccer package for Python, I was thinking about making them in R with the help of the [worldfootballR package.](https://github.com/JaseZiv/worldfootballR). When some people contacted me with the question if I knew how to do it, I decided to make a tutorial for it. If you don't know what I'm talking about, this is the radar from mplsoccer. 
 
@@ -136,6 +137,8 @@ df_selected <- df[c(1:5,7:13,17,19,20),]
 ```
 
 You will get the same result.
+
+### Making the chart
 
 To make the pizza chart, we will use geom_bar() with coord_polar(). It's a neat little trick as there isn't a good package to do it otherwise. 
 
