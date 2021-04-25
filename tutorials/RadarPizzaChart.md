@@ -9,7 +9,7 @@ og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.i
 
 [Making the chart](#making-the-chart)
 
-[Some other (well known) styles](#some-other-(well-known)-styles)
+[Some other (well known) styles](#some-other-well-known-styles)
 
 As I really like the radars/pizza charts from football slices (RIP) and the mplsoccer package for Python, I was thinking about making them in R with the help of the [worldfootballR package.](https://github.com/JaseZiv/worldfootballR). When some people contacted me with the question if I knew how to do it, I decided to make a tutorial for it. If you don't know what I'm talking about, this is the radar from mplsoccer. 
 
