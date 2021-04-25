@@ -35,7 +35,7 @@ As mentioned before, worldfootballR has a function to scrape the scouting report
 ```
 df <- fb_player_scouting_report(https://fbref.com/en/players/282679b4/Mateusz-Klich)
 ```
-
+---
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">Using other data</summary>
@@ -76,6 +76,9 @@ You can change the stat column to your liking, but you have to change the scale_
   </details>
 
 {::options parse_block_html="false" /}
+
+---
+
 
 To colour them by type of the Statistic, we make a new column and fill it with "Attacking", "Possession" or "Defending". 
 
