@@ -277,7 +277,7 @@ I prefer to trim it, as it removes unnecessary parts from the plot.
 
 #### Some more styles
 
-Some examples, with some well known styles included. Just a head start to create your own style and learn about how the different elements of ggplot work.
+Some examples, with some well known styles included. Just a head start to create your own style and learn about how the different elements of ggplot work. Play around with colours/fonts/grid lines etc. to create something unique!
 
 The Athletic/ Tom Worville
 <p align="center">
