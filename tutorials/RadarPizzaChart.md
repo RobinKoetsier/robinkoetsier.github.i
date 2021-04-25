@@ -35,6 +35,48 @@ As mentioned before, worldfootballR has a function to scrape the scouting report
 ```
 df <- fb_player_scouting_report(https://fbref.com/en/players/282679b4/Mateusz-Klich)
 ```
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Using other data</summary>
+  
+You can use [The full scouting report](https://fbref.com/en/players/282679b4/scout/365_euro/Mateusz-Klich-Scouting-Report) as well. You only have to make the data frame yourself. A short example how to do this:
+
+```r
+df_selected<- data.frame(player_name = "Mateusz Klich",
+                         Statistic = c("Pressures (Att 3rd)", 
+                                       "% of dribblers tackled",
+                                       "Touches (Att 3rd)",
+                                       "Carries into Final Third",
+                                       "Progressive Passes Rec",
+                                       "Crosses"),
+                         Per.90 = c(4.63,
+                                    16,
+                                    26.11,
+                                    2.55,
+                                    7.22,
+                                    1.32),
+                         Percentile = c(92,
+                                        3,
+                                        94,
+                                        93,
+                                        98,
+                                        87),
+                         stat=c("Defending",
+                                "Defending",
+                                "Possession",
+                                "Possession",
+                                "Possession",
+                                "Attacking"))
+
+```
+
+You can change the stat column to your liking, but you have to change the scale_fill_manuel() later on as well.
+
+  </details>
+
+{::options parse_block_html="false" /}
+
 To colour them by type of the Statistic, we make a new column and fill it with "Attacking", "Possession" or "Defending". 
 
 ```r
