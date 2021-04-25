@@ -361,8 +361,8 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
 #### Football Slices
 
 <p align="center">
-   <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/FooSli.png">
-<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/FooSli.png" style="width:400px">
+   <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/FooSlice.png">
+<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/FooSlice.png" style="width:400px">
       </a>
 </p>
 
