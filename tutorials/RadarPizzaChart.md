@@ -277,6 +277,8 @@ I prefer to trim it, as it removes unnecessary parts from the plot.
 
 #### Some more styles
 
+Some examples, with some well known styles included. Just a head start to create your own style and learn about how the different elements of ggplot work.
+
 The Athletic/ Tom Worville
 <p align="center">
    <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/athe1.png">
@@ -325,6 +327,62 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank(),
         plot.margin = margin(5,4,2,4)) 
+```
+
+
+</details>
+<br/>
+
+{::options parse_block_html="false" /}
+
+Football Slices
+
+<p align="center">
+   <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/FooSli.png">
+<img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/FooSli.png" style="width:400px">
+      </a>
+</p>
+
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">The code</summary>
+  
+```r
+ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +                      
+  geom_bar(aes(y=100),fill="#FAFBFD",stat="identity",width=1,colour="black",                 
+  alpha=0.5) +                                                                          
+  geom_bar(stat="identity",width=0.95,aes(fill=stat),colour=NA) +                    
+  coord_polar(clip = "off") +                                                                       
+ 
+   geom_hline(yintercept=25, colour="#CFD0D2",alpha=1,size=0.1)+
+  geom_hline(yintercept=50, colour="#CFD0D2",alpha=1,size=0.1)+
+  geom_hline(yintercept=75, colour="#CFD0D2",alpha=1,size=0.1)+ 
+   geom_text(aes(label=Per.90,fill=stat),size=2,color="black",show.legend = FALSE)+  
+ scale_fill_manual(values=c("Possession" = "#F47294",                                   
+                             "Attacking" = "#E7D96E",
+                             "Defending" = "#8FBFEF")) +                                                              
+  scale_y_continuous(limits = c(-10,110))+                                             
+  labs(fill="",   
+       caption = "Data from StatsBomb via FBref\nStyle copied from @FootballSlices",     
+       #remove legend title
+       title=glue("{df_selected$player_name[1]} | Leeds United"),
+        subtitle = glue::glue("{df_selected$season} | Compared to midfielders Top 5 competitions | stats per 90"))+                                               
+  theme_minimal() +                                                                  
+  theme(plot.background = element_rect(fill = "#FAFBFD",color = "#FAFBFD"),
+        panel.background = element_rect(fill = "#FAFBFD",color = "#FAFBFD"),
+        legend.position = "top",
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(),
+         axis.text.x = element_text(size = 6),
+        text = element_text(family="Spartan-Light"),                                    
+        plot.title = element_markdown(hjust=0.5,family="Spartan-Medium"),
+        plot.subtitle = element_text(hjust=0.5,size=8),
+        plot.caption = element_text(hjust=0.5,size=6),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        plot.margin = margin(5,2,2,2)) 
 ```
 
 
