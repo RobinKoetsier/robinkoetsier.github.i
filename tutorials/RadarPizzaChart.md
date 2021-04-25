@@ -8,7 +8,7 @@ og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.i
 
 ### Table of Contents
 
-[intro](#intro)
+[Intro](#intro)
 
 [Getting and preparing the data](#getting-and-preparing-the-data)
 
