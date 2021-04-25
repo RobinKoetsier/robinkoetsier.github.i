@@ -5,7 +5,7 @@ date:   24-04-2021
 blurb: "Making radars"
 og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/second_post/0.jpg
 ---
-[link](#1-this-is-my-header)
+[link](#getting-and-preparing-the-data)
 
 As I really like the radars/pizza charts from football slices (RIP) and the mplsoccer package for Python, I was thinking about making them in R with the help of the [worldfootballR package.](https://github.com/JaseZiv/worldfootballR). When some people contacted me with the question if I knew how to do it, I decided to make a tutorial for it. If you don't know what I'm talking about, this is the radar from mplsoccer. 
 
@@ -20,7 +20,7 @@ As I really like the radars/pizza charts from football slices (RIP) and the mpls
 The Python package makes you enter te values yourself. For some leagues (Men's Big 5 Leagues and European Competition, Major League Soccer, Women's Super League) FBref has so called scouting reports with data from StatsBomb. These scouting reports do not only have the absolute numbers for several metrics, but also the percentiles. 
 The worldfootballR package let's you scrape them really easy. Let's start by setting up our environment. If needed, install the packages first.
 
-### 1. This is my Header  
+### Getting and preparing the data 
 ```r
 library(worldfootballR)  #for scraping
 library(tidyverse)       #for ggplot, dplyr and several other stuff
