@@ -366,7 +366,6 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
       </a>
 </p>
 
-
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">The code</summary>
