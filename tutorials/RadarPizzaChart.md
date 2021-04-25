@@ -34,6 +34,14 @@ As mentioned before, worldfootballR has a function to scrape the scouting report
 
 ```
 df <- fb_player_scouting_report(https://fbref.com/en/players/282679b4/Mateusz-Klich)
+head(df)
+ player_name    season         Statistic Per.90 Percentile      
+1 Mateusz Klich 2020-2021 Non-Penalty Goals   0.04         44 
+2 Mateusz Klich 2020-2021              npxG   0.06         52 
+3 Mateusz Klich 2020-2021       Shots Total   1.19         69 
+4 Mateusz Klich 2020-2021           Assists   0.21         92 
+5 Mateusz Klich 2020-2021                xA   0.15         89 
+6 Mateusz Klich 2020-2021           npxG+xA   0.21         81 
 ```
 
 ---
