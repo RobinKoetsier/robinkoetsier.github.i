@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Percentile Radars/Pizza's"
-date:   24-04-2021
+date:   27-04-2021
 blurb: "Making radars"
 og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/second_post/0.jpg
 ---
