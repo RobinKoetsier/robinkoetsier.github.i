@@ -279,7 +279,7 @@ I prefer to trim it, as it removes unnecessary parts from the plot.
 
 Some examples, with some well known styles included. Just a head start to create your own style and learn about how the different elements of ggplot work. Play around with colours/fonts/grid lines etc. to create something unique!
 
-The Athletic/ Tom Worville
+##### The Athletic/ Tom Worville
 <p align="center">
    <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/athe1.png">
 <img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/athe1.png" style="width:400px">
@@ -335,7 +335,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
 
 {::options parse_block_html="false" /}
 
-Football Slices
+##### Football Slices
 
 <p align="center">
    <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/FooSli.png">
@@ -391,7 +391,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
 
 {::options parse_block_html="false" /}
 
-One with no background slices
+##### One with no background
 
 <p align="center">
    <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/blank.png">
@@ -447,7 +447,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
 
 {::options parse_block_html="false" /}
 
-One with other labels and background slices
+##### One with other labels and background colour
 
 <p align="center">
    <a href="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/label.png">
