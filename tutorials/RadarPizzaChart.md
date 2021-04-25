@@ -16,6 +16,9 @@ og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.i
 
 [Some other (well known) styles](#some-other-well-known-styles)
 * [The Athletic/ Tom Worville](#the-athletic-tom-worville)
+* [Football Slices](#football-slices)
+* [No background](#one-with-no-background)
+* [Other labels and different background color](#one-with-other-labels-and-background-colour)
 
 ### Intro
 
