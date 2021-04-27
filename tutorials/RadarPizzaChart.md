@@ -19,7 +19,7 @@ og_image: https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.i
 
 ### Intro
 
-As I really like the radars/pizza charts from football slices (RIP) and the mplsoccer package for Python, I was thinking about making them in R with the help of the [worldfootballR package.](https://github.com/JaseZiv/worldfootballR). When some people contacted me with the question if I knew how to do it, I decided to make a tutorial for it. If you don't know what I'm talking about, this is the radar from mplsoccer. 
+As I really like the radars/pizza charts from football slices (RIP) and the mplsoccer package for Python, I was thinking about making them in R with the help of the [worldfootballR package.](https://github.com/JaseZiv/worldfootballR) When some people contacted me with the question if I knew how to do it, I decided to make a tutorial for it. If you don't know what I'm talking about, this is the radar from mplsoccer. 
 
 <p align="center">
   
@@ -184,7 +184,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
 <img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/tutorials/pizza/first-1.png" style="width:400px">
       </a>
 </p>
-Doesn't look half bad, but the labels are horrible. Besides that we should add some extra information about the player. The labels need to be rotated so they look better. We can do this by hand, but if we change the number of metrics we're using we need to do it all over again. So let's just make a calculation that we can run everytime we make a new chart.
+Doesn't look half bad, but the labels are horrible. Besides that we should add some extra information about the player. The labels need to be rotated so they look better. We can do this by hand, but if we change the number of metrics we're using we need to do it all over again. So let's just make a calculation that we can run everytime we make a new chart. I chose to display the 'Per 90' stats insteadd of the percentiles. You can change this in geom_label().
 
 ```r
 temp <- (360/(length(df_selected$player_name))/2)                             #find the difference in angle between to labels and divide by two.
