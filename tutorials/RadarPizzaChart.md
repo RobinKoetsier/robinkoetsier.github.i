@@ -545,4 +545,4 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
 {::options parse_block_html="false" /}
 
 
-If you have any questions, [contact me on Twitter.](https://twitter.com/RobinWilhelmus)
+If you have any questions, [contact me on Twitter.](https://twitter.com/RobinWilhelmus) and please tag me if you make a chart yourself! Love to see what people make of it.
