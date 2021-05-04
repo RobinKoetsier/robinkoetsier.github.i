@@ -48,15 +48,15 @@ As mentioned before, worldfootballR has a function to scrape the scouting report
 Note: the function was updated to scrape the WHOLE scouting report. So selecting your rows need some more thought. Will update it later on.
 
 ```
-df <- fb_player_scouting_report(https://fbref.com/en/players/282679b4/Mateusz-Klich)
+df <- fb_player_scouting_report("https://fbref.com/en/players/282679b4/Mateusz-Klich")
 head(df)
- player_name    season         Statistic Per.90 Percentile      
-1 Mateusz Klich 2020-2021 Non-Penalty Goals   0.04         44 
-2 Mateusz Klich 2020-2021              npxG   0.06         52 
-3 Mateusz Klich 2020-2021       Shots Total   1.19         69 
-4 Mateusz Klich 2020-2021           Assists   0.21         92 
-5 Mateusz Klich 2020-2021                xA   0.15         89 
-6 Mateusz Klich 2020-2021           npxG+xA   0.21         81 
+  Player        Versus       StatGroup               Statistic Per90 Percentile BasedOnMinutes
+3 Mateusz Klich Midfielders  Standard                   Goals  0.12         77           2229
+4 Mateusz Klich Midfielders  Standard                 Assists  0.20         91           2229
+5 Mateusz Klich Midfielders  Standard       Non-Penalty Goals  0.04         41           2229
+6 Mateusz Klich Midfielders  Standard      Penalty Kicks Made  0.08         96           2229
+7 Mateusz Klich Midfielders  Standard Penalty Kicks Attempted  0.08         95           2229
+8 Mateusz Klich Midfielders  Standard            Yellow Cards  0.24         48           2229
 ```
 
 ---
@@ -74,7 +74,7 @@ df_selected<- data.frame(player_name = "Mateusz Klich",
                                        "Carries into Final Third",
                                        "Progressive Passes Rec",
                                        "Crosses"),
-                         Per.90 = c(4.63,
+                         Per90 = c(4.63,
                                     16,
                                     26.11,
                                     2.55,
@@ -104,8 +104,78 @@ You can change the stat column to your liking, but you have to change the scale_
 ---
 
 
+Now we can use this column to color the chart. I'm not interested in every metric though. The 'npxG+xA' column for instance. I already have those metrics each in my chart. To pick the metrics you want/don't want, print the Statistic column and choose.
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">See all statistics</summary>
+
+```r
+print(df$Statistic)
+ [1] "Goals"                         "Assists"                       "Non-Penalty Goals"            
+  [4] "Penalty Kicks Made"            "Penalty Kicks Attempted"       "Yellow Cards"                 
+  [7] "Red Cards"                     "xG"                            "npxG"                         
+ [10] "xA"                            "npxG+xA"                       "Goals"                        
+ [13] "Shots Total"                   "Shots on target"               "Shots on target %"            
+ [16] "Goals/Shot"                    "Goals/Shot on target"          "Average Shot Distance"        
+ [19] "Shots from free kicks"         "Penalty Kicks Made"            "Penalty Kicks Attempted"      
+ [22] "xG"                            "npxG"                          "npxG/Sh"                      
+ [25] "Goals - xG"                    "Non-Penalty Goals - npxG"      "Passes Completed"             
+ [28] "Passes Attempted"              "Pass Completion %"             "Total Passing Distance"       
+ [31] "Progressive Passing Distance"  "Passes Completed (Short)"      "Passes Attempted (Short)"     
+ [34] "Pass Completion % (Short)"     "Passes Completed (Medium)"     "Passes Attempted (Medium)"    
+ [37] "Pass Completion % (Medium)"    "Passes Completed (Long)"       "Passes Attempted (Long)"      
+ [40] "Pass Completion % (Long)"      "Assists"                       "xA"                           
+ [43] "Key Passes"                    "Passes into Final Third"       "Passes into Penalty Area"     
+ [46] "Crosses into Penalty Area"     "Progressive Passes"            "Passes Attempted"             
+ [49] "Live-ball passes"              "Dead-ball passes"              "Passes from Free Kicks"       
+ [52] "Through Balls"                 "Passes Under Pressure"         "Switches"                     
+ [55] "Crosses"                       "Corner Kicks"                  "Inswinging Corner Kicks"      
+ [58] "Outswinging Corner Kicks"      "Straight Corner Kicks"         "Ground passes"                
+ [61] "Low Passes"                    "High Passes"                   "Passes Attempted (Left)"      
+ [64] "Passes Attempted (Right)"      "Passes Attempted (Head)"       "Throw-Ins taken"              
+ [67] "Passes Attempted (Other)"      "Passes Completed"              "Passes Offside"               
+ [70] "Passes Out of Bounds"          "Passes Intercepted"            "Passes Blocked"               
+ [73] "Shot-Creating Actions"         "SCA (PassLive)"                "SCA (PassDead)"               
+ [76] "SCA (Drib)"                    "SCA (Sh)"                      "SCA (Fld)"                    
+ [79] "SCA (Def)"                     "Goal-Creating Actions"         "GCA (PassLive)"               
+ [82] "GCA (PassDead)"                "GCA (Drib)"                    "GCA (Sh)"                     
+ [85] "GCA (Fld)"                     "GCA (Def)"                     "GCA (OG)"                     
+ [88] "Tackles"                       "Tackles Won"                   "Tackles (Def 3rd)"            
+ [91] "Tackles (Mid 3rd)"             "Tackles (Att 3rd)"             "Dribblers Tackled"            
+ [94] "Dribbles Contested"            "% of dribblers tackled"        "Dribbled Past"                
+ [97] "Pressures"                     "Successful Pressures"          "Successful Pressure %"        
+[100] "Pressures (Def 3rd)"           "Pressures (Mid 3rd)"           "Pressures (Att 3rd)"          
+[103] "Blocks"                        "Shots Blocked"                 "Shots Saved"                  
+[106] "Passes Blocked"                "Interceptions"                 "Tkl+Int"                      
+[109] "Clearances"                    "Errors"                        "Touches"                      
+[112] "Touches (Def Pen)"             "Touches (Def 3rd)"             "Touches (Mid 3rd)"            
+[115] "Touches (Att 3rd)"             "Touches (Att Pen)"             "Touches (Live-Ball)"          
+[118] "Dribbles Completed"            "Dribbles Attempted"            "Successful Dribble %"         
+[121] "Players Dribbled Past"         "Nutmegs"                       "Carries"                      
+[124] "Total Carrying Distance"       "Progressive Carrying Distance" "Progressive Carries"          
+[127] "Carries into Final Third"      "Carries into Penalty Area"     "Miscontrols"                  
+[130] "Dispossessed"                  "Pass Targets"                  "Passes Received"              
+[133] "Passes Received %"             "Progressive Passes Rec"        "Yellow Cards"                 
+[136] "Red Cards"                     "Second Yellow Card"            "Fouls Committed"              
+[139] "Fouls Drawn"                   "Offsides"                      "Crosses"                      
+[142] "Interceptions"                 "Tackles Won"                   "Penalty Kicks Won"            
+[145] "Penalty Kicks Conceded"        "Own Goals"                     "Ball Recoveries"              
+[148] "Aerials won"                   "Aerials lost"                  "% of Aerials Won"      
+```
+
+  </details>
+
+{::options parse_block_html="false" /}
+
+If you want to pick your metrics, use the statement below
+
+```r
+df_selected <- df[c(2,3,9,10,13,28,29,47,73,107,109,116,118,126,148),]
+```
 
 To colour them by type of the Statistic, we make a new column and fill it with "Attacking", "Possession" or "Defending". 
+You can use the StatGroup column that is already provided as well, but this tutorial was made before you could scrape the whole scouting report.
 
 ```r
 df <- df %>% 
@@ -126,31 +196,6 @@ df <- df %>%
                                  TRUE ~ "Defending"))
 ```
 
-Now we can use this column to color the chart. I'm not interested in every metric though. The 'npxG+xA' column for instance. I already have those metrics each in my chart. To pick the metrics you want/don't want, print the Statistic column and choose.
-
-```r
-print(df$Statistic)
- [1] "Non-Penalty Goals"      "npxG"                   "Shots Total"            "Assists"               
- [5] "xA"                     "npxG+xA"                "Shot-Creating Actions"  "Passes Attempted"      
- [9] "Pass Completion %"      "Progressive Passes"     "Progressive Carries"    "Dribbles Completed"    
-[13] "Touches (Att Pen)"      "Progressive Passes Rec" "Pressures"              "Tackles"               
-[17] "Interceptions"          "Blocks"                 "Clearances"             "Aerials won"        
-```
-
-I decided to exclude some instead of picking the one to include. This was purely because is was less code.
-
-```r
-df_selected <- df[-c(6,14,15,16,18),]
-```
-
-If you want to pick your metric, use the same statement without the minus sign. So:
-
-```r
-df_selected <- df[c(1:5,7:13,17,19,20),]
-```
-
-You will get the same result.
-
 ### Making the chart
 
 To make the pizza chart, we will use geom_bar() with coord_polar(). It's a neat little trick as there isn't a good package to do it otherwise. 
@@ -161,14 +206,14 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
   alpha=0.5) +                                                                          #change alphe to make it more or less visible
   geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
   coord_polar() +                                                                       #make it round
-  geom_label(aes(label=Per.90,fill=stat),size=2,color="white",show.legend = FALSE)+     #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
+  geom_label(aes(label=Per90,fill=stat),size=2,color="white",show.legend = FALSE)+     #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
  scale_fill_manual(values=c("Possession" = "#D70232",                                   #choose colors to fill the pizza parts
                              "Attacking" = "#1A78CF",
                              "Defending" = "#FF9300")) +                                                              
   scale_y_continuous(limits = c(-10,100))+                                              #create the white part in the middle.   
   labs(fill="",                                                                         #remove legend title
-       caption = "Data from StatsBomb via FBref",                                        #credit FBref/StatsBomb
-       title=df_selected$player_name[1])+                                               #let the title be te name of the player
+       caption = "Data from StatsBomb via FBref",                                       #credit FBref/StatsBomb
+       title=df_selected$Player[1])+                                                    #let the title be te name of the player
  
   theme_minimal() +                                                                     #from here it's only themeing. 
   theme(legend.position = "top",
@@ -207,14 +252,14 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
   alpha=0.5) +                                                                          #change alphe to make it more or less visible
   geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
   coord_polar() +                                                                       #make it round
-  geom_label(aes(label=Per.90,fill=stat),size=2,color="white",show.legend = FALSE)+     #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
+  geom_label(aes(label=Per90,fill=stat),size=2,color="white",show.legend = FALSE)+     #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
  scale_fill_manual(values=c("Possession" = "#D70232",                                   #choose colors to fill the pizza parts
                              "Attacking" = "#1A78CF",
                              "Defending" = "#FF9300")) +                                                              
   scale_y_continuous(limits = c(-10,100))+                                              #create the white part in the middle.   
   labs(fill="",                                                                         #remove legend title
-       caption = "Data from StatsBomb via FBref",                                        #credit FBref/StatsBomb
-       title=df_selected$player_name[1])+                                               #let the title be te name of the player
+       caption = "Data from StatsBomb via FBref",                                       #credit FBref/StatsBomb
+       title=df_selected$Player[1])+                                                    #let the title be te name of the player
  
   theme_minimal() +                                                                     #from here it's only themeing. 
   theme(legend.position = "top",
@@ -252,7 +297,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
   alpha=0.5) +                                                                          #change alphe to make it more or less visible
   geom_bar(stat="identity",width=1,aes(fill=stat),colour="white") +                     #insert the values 
   coord_polar() +                                                                       #make it round
-  geom_label(aes(label=Per.90,fill=stat),size=2,color="white",show.legend = FALSE)+     #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
+  geom_label(aes(label=Per90,fill=stat),size=2,color="white",show.legend = FALSE)+      #add a label for the value. Change 'label=Per.90' to 'label=Percentile' to show the percentiles
  scale_fill_manual(values=c("Possession" = "#D70232",                                   #choose colors to fill the pizza parts
                              "Attacking" = "#1A78CF",
                              "Defending" = "#FF9300")) +                                                              
@@ -260,7 +305,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
   labs(fill="",   
        caption = "Data from StatsBomb via FBref",     
        #remove legend title
-       title=glue("{df_selected$player_name[1]} | Leeds United"),
+       title=glue("{df_selected$Player[1]} | Leeds United"),
         subtitle = glue::glue("{df_selected$season} | Compared to midfielders Top 5 competitions | stats per 90"))+ #let the title be te name of the player                                                
  
   theme_minimal() +                                                                     #from here it's only themeing. 
@@ -335,7 +380,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
   labs(fill="",   
        caption = "Data from StatsBomb via FBref\nStyle copied from The Athletic/@worville",     
        #remove legend title
-       title=glue("{df_selected$player_name[1]} | Leeds United"),
+       title=glue("{df_selected$Player[1]} | Leeds United"),
         subtitle = glue::glue("{df_selected$season} | Compared to midfielders Top 5 competitions | stats per 90"))+                                                
   theme_minimal() +                                                                     
   theme(plot.background = element_rect(fill = "#131313",color = "#131313"),
@@ -383,7 +428,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
    geom_hline(yintercept=25, colour="#CFD0D2",alpha=1,size=0.1)+
   geom_hline(yintercept=50, colour="#CFD0D2",alpha=1,size=0.1)+
   geom_hline(yintercept=75, colour="#CFD0D2",alpha=1,size=0.1)+ 
-   geom_text(aes(label=Per.90,fill=stat),size=2,color="black",show.legend = FALSE)+  
+   geom_text(aes(label=Per90,fill=stat),size=2,color="black",show.legend = FALSE)+  
  scale_fill_manual(values=c("Possession" = "#F47294",                                   
                              "Attacking" = "#E7D96E",
                              "Defending" = "#8FBFEF")) +                                                              
@@ -391,7 +436,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
   labs(fill="",   
        caption = "Data from StatsBomb via FBref\nStyle copied from @FootballSlices",     
        #remove legend title
-       title=glue("{df_selected$player_name[1]} | Leeds United"),
+       title=glue("{df_selected$Player[1]} | Leeds United"),
         subtitle = glue::glue("{df_selected$season} | Compared to midfielders Top 5 competitions | stats per 90"))+                                               
   theme_minimal() +                                                                  
   theme(plot.background = element_rect(fill = "#FAFBFD",color = "#FAFBFD"),
@@ -438,7 +483,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
   geom_hline(yintercept=75, colour="white",linetype="longdash",alpha=0.5)+ 
   geom_hline(yintercept=100, colour="white",alpha=0.5)+ 
   coord_polar() +                                                                     
-  geom_label(aes(label=Per.90),fill="#D20222",size=2,color="white",show.legend = FALSE)+     
+  geom_label(aes(label=Per90),fill="#D20222",size=2,color="white",show.legend = FALSE)+     
   scale_fill_manual(values=c("Possession" = "#D70232",                                  
                              "Attacking" = "#1A78CF",
                              "Defending" = "#FF9300")) +                                                              
@@ -446,7 +491,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
   labs(fill="",   
        caption = "Data from StatsBomb via FBref",     
        #remove legend title
-       title=glue("{df_selected$player_name[1]} | Manchester United"),
+       title=glue("{df_selected$Player[1]} | Manchester United"),
        subtitle = glue::glue("{df_selected$season} | Compared to midfielders Top 5 competitions | stats per 90"))+                                               
   
   theme_minimal() +                                                                     
@@ -510,7 +555,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
   geom_hline(yintercept=75, colour="white",linetype="longdash",alpha=0.5)+ 
   geom_hline(yintercept=100, colour="white",alpha=0.5)+ 
   coord_polar() +                                                                     
-  geom_label(aes(label=Per.90),fill="#CC0033",size=2,color="white",show.legend = FALSE,family="Spartan-Bold")+     
+  geom_label(aes(label=Per90),fill="#CC0033",size=2,color="white",show.legend = FALSE,family="Spartan-Bold")+     
   scale_fill_manual(values=c("Possession" = "#D70232",                                  
                              "Attacking" = "#1A78CF",
                              "Defending" = "#FF9300")) +                                                              
@@ -518,7 +563,7 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +
   labs(fill="",   
        caption = "Data from StatsBomb via FBref",     
        #remove legend title
-       title=glue("{df_selected$player_name[1]} | Bayern Munich"),
+       title=glue("{df_selected$Player[1]} | Bayern Munich"),
        subtitle = glue::glue("{df_selected$season} | Compared to attackers Top 5 competitions | stats per 90"))+                                               
   geom_text(data=label_data, aes(x=id, y=100+10, label=Statistic, hjust=hjust), 
       color="#0066B2", fontface="bold",alpha=0.6, size=2.5, angle= label_data$angle, inherit.aes = FALSE )  +
