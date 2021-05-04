@@ -175,10 +175,10 @@ df_selected <- df[c(2,3,9,10,13,28,29,47,73,107,109,116,118,126,148),]
 ```
 
 To colour them by type of the Statistic, we make a new column and fill it with "Attacking", "Possession" or "Defending". 
-You can use the StatGroup column that is already provided as well, but this tutorial was made before you could scrape the whole scouting report.
+You can use the StatGroup column that is already provided as well, but this tutorial was made before you could scrape the whole scouting report. This is also the reason the Statistics look random. Just change it to match your data frame.
 
 ```r
-df <- df %>% 
+df_selected <- df_selected %>% 
       mutate(stat=case_when(Statistic == "Non-Penalty Goals"|
                             Statistic == "npxG"|
                             Statistic == "Shots Total"|
