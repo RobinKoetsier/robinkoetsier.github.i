@@ -1,7 +1,7 @@
 # bay
 
 Bay is a simple theme for Jekyll. [[view live]](https://eliottvincent.github.io/bay)
-
+<iframe width="100%" height="475" src="https:://www.gettingbluefingers.com" frameborder="0"></iframe>
 Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliottvincent.com](http://eliottvincent.com/).
 
 ![](/screenshot.png)
