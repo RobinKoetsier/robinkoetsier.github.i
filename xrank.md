@@ -4,4 +4,4 @@ title: xRank
 slug: /rank
 ---
 
-here is my test
+here is my test2
