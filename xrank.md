@@ -1,5 +1,5 @@
 ---
-layout: rank
+layout: rmarkdown/rank
 title: xRank
 slug: /rank
 ---
