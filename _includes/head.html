@@ -1,5 +1,7 @@
 <head> 
-  
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
   {% assign page_is_article = false %}
   {% if page.layout == "post" %}{% assign page_is_article = true %}{% endif %}
@@ -58,7 +60,7 @@
     <meta property="twitter:site" content="{{ twitter_username }}"/>
   {% endif %}
 
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}"/>
+  
   <link rel="canonical" href="{{ page_url }}"/>
   <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}" type="image/x-icon"/> 
 
