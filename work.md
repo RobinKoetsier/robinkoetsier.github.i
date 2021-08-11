@@ -14,7 +14,7 @@ items:
     image:
       src: /assets/img/work/tableau-software.png
       alt: Tableau
-    description: Tableau dashboards during my time ate university, but also for articles. <a href="https://public.tableau.com/profile/robin.koetsier#!/vizhome/SpelersAlles/Dashboard1?publish=yes">See my dashboard about football players in the Netherlands and their birth place.</a> 
+    description: Tableau dashboards during my time at university, but also for articles. <a href="https://public.tableau.com/profile/robin.koetsier#!/vizhome/SpelersAlles/Dashboard1?publish=yes">See my dashboard about football players in the Netherlands and their birth place.</a> 
 
 
   - title: <b>Tussen de Linies</b>
