@@ -5,4 +5,4 @@ slug: /rank
 ---
 
 
-test 1
+test 2
