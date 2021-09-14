@@ -59,6 +59,12 @@ head(df)
 8 Mateusz Klich Midfielders  Standard            Yellow Cards  0.24         48           2229
 ```
 
+For some players you need to add
+```
+pos_versus = "primary"
+```
+inside the function as the player played multiple positions.
+
 ---
 {::options parse_block_html="true" /}
 
