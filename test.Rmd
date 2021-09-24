@@ -1,5 +1,5 @@
 ---
-title: "Demo Cookbook"
+title: "Demo Cookbook" 
 output:
   html_document:
     toc: true
