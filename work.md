@@ -24,6 +24,6 @@ items:
     description: Wrote some articles in Dutch about Dutch football and Expected Points. <a href="https://www.tussendelinies.nl/profile/robin">Click here for my articles.</a> Besides that, I help the other editors with data and data visualizations for their articles. 
 ---
 
-Here you can see some examples of my writing and coding.
+Here you can see some examples of my writing and coding. 
 <br />
 <br />
