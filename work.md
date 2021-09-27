@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work 
 title: Work
 slug: /work
 items:
