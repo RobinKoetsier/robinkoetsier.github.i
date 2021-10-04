@@ -2,7 +2,7 @@
 title: "Women's World Cup Predictions"
 output: html_document
 resource_files:
-layout: external.html
+layout: external.html 
 permalink: /ja
   {% include head.html %}
    {% include header.html %}
