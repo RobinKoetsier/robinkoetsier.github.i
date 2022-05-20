@@ -240,8 +240,8 @@ ggplot(df_selected,aes(fct_reorder(Statistic,stat),Percentile)) +               
 Doesn't look half bad, but the labels are horrible. Besides that we should add some extra information about the player. The labels need to be rotated so they look better. We can do this by hand, but if we change the number of metrics we're using we need to do it all over again. So let's just make a calculation that we can run everytime we make a new chart. I chose to display the 'Per 90' stats insteadd of the percentiles. You can change this in geom_label().
 
 ```r
-temp <- (360/(length(df_selected$player_name))/2)                             #find the difference in angle between to labels and divide by two.
-myAng <- seq(-temp, -360+temp, length.out = length(df_selected$player_name))  #get the angle for every label
+temp <- (360/(nrow(df_selected))/2)                             #find the difference in angle between to labels and divide by two.
+myAng <- seq(-temp, -360+temp, length.out = nrow(df_selected))  #get the angle for every label
 ang<-ifelse(myAng < -90, myAng+180, myAng)                                    #rotate label by 180 in some places for readability
 ang<-ifelse(ang < -90, ang+180, ang)                                          #rotate some lables back for readability...
 ```
