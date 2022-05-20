@@ -11,7 +11,7 @@ Welcome!
  
  </p>
 My name is Robin Koetsier. This site serves as an personal site for my data and blog posts. (Very much still work in progress)
-  
+   
  <p> 
 I mostly write about Dutch football.
 On my Twitter profile you can follow me for visualizations of Eredivisie matches and other stuff. 

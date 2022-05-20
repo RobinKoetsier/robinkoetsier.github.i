@@ -1,5 +1,5 @@
 ---
-title: "Demo Cookbook"
+title: "Demo Cookbook" 
 output:
   html_document:
     toc: true
@@ -13,7 +13,7 @@ resource_files:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-library(reactable)
+library(reactable) 
 ```
 
 > A collection of recipes used to create the reactable demos

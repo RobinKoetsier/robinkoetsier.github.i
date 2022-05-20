@@ -4,5 +4,5 @@ title: Blog
 slug: /blog
 ---
 
-My own blog posts
+My own blog posts 
 <br />
