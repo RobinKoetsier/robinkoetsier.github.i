@@ -10,7 +10,7 @@ title: Shiny Apps
      style="width:200px">  
 <a href="https://shinynew.robinkoetsier.nl/tussendelinies/"><strong>Eredivisie Data Dashboard</strong></a>
 
-<a href="http://shinynew.robinkoetsier.nl/AppTwo">
+<a href="https://3.129.244.197/AppTwo/">
 <img src="https://raw.githubusercontent.com/RobinKoetsier/robinkoetsier.github.io/master/assets/img/shiny/shinyAge.png"
      style="width:200px">  
-<a href="http://shinynew.robinkoetsier.nl/AppTwo"><strong>Age plot app</strong></a>
+<a href="https://3.129.244.197/AppTwo/"><strong>Age plot app</strong></a>
