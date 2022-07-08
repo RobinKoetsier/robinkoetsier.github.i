@@ -10,7 +10,7 @@ profile_picture:
 ### Welcome! 
  
 
-My name is Robin Koetsier. This site serves as an personal site for my data and blog posts. (Very much still work in progress)
+My name is Robin Koetsier. This site serves as a personal site for my data and blog posts. (Very much still work in progress)
    
  <p> 
 I mostly write about Dutch football.
