@@ -5,11 +5,11 @@ profile_picture:
   alt: website picture
 ---
 
-<p>
 
-Welcome! 
+
+### Welcome! 
  
- </p>
+
 My name is Robin Koetsier. This site serves as an personal site for my data and blog posts. (Very much still work in progress)
    
  <p> 
@@ -20,7 +20,7 @@ Besides that, I wrote some shiny apps that you can find under the link to my wor
 
 </p>
 
-### Twitter
+#### Twitter
 
 <a href="https://www.twitter.com/RobinWilhelmus">Personal Twitter</a> 
 
