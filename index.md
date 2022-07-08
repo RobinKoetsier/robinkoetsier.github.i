@@ -22,5 +22,5 @@ Besides that, I wrote some shiny apps that you can find under the link to my wor
 
 ### Twitter
 
- <a href="https://www.twitter.com/RobinWilhelmus">Personal Twitter</a> 
-@EredivisiePlots
+<a href="https://www.twitter.com/RobinWilhelmus">Personal Twitter</a> 
+<a href="https://www.twitter.com/EredivisiePlots">Eredivisie bot</a> 
