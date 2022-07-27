@@ -349,6 +349,8 @@ There is also an option to add the color to ggsave:
 ggsave("image.png",bg="#F2F4F5")
 ```
 
+You can add the resolution to ggsave() if the quality is poor. 
+
 I prefer to trim it, as it removes unnecessary parts from the plot.
 
 ### Some other (well known) styles
